@@ -1,0 +1,161 @@
+*{margin: 0;padding: 0; transition:all 0.2s;}
+body{width: 100%;text-align: center;font-size: 12px;font-family: 微软雅黑,宋体;text-align: left;}
+img{border: 0px;}
+ul,li{ list-style: none; list-style-position: outside; }
+a{text-decoration: none;}
+input:focus{outline: none;}
+html { overflow-x: hidden; overflow-y: auto; }
+
+
+
+
+/*主要框架*/
+.topBar{width: 100%;min-width: 1000px;height: 54px;background-color: #242424;position: fixed;z-index: 1000;}
+.menu{width: 1160px;height: 54px;margin: auto;font-size: 15px;}
+
+/*导航栏*/
+.logo973{width: 140px;height: 54px;float: left;display: block;background-image: url("../css/images/src.gif");}
+.ios{width:92px;height: 54px;line-height: 54px; display: block;float: left;margin-left: 80px;background-image: url("../css/images/src.gif");background-position: -178px 0;color: rgb(194,194,194);text-indent: 43px;}
+.anzhuo{width:92px;height: 54px;line-height: 54px; display: block;float: left;background-image: url("../css/images/src.gif");background-position: -266px 0;color: rgb(194,194,194);text-indent: 43px;}
+.menu span{width: 34px;float: left;height: 54px;line-height: 54px;color: #434343;}
+.mainlevel{width: 86px;display: block;float: left;height: 54px;text-indent: 16px;line-height: 54px;color: rgb(194,194,194);background: url("../css/images/arrow.gif") 55px 0 no-repeat;position: relative;}
+.mainlevel a{color:rgb(194,194,194)}
+.subNav{position: absolute;width: 136px;padding: 10px 0 10px 0;left: 0px;top: 54px;background-color: #373737;display: none;}
+.subNav li{height: 34px;line-height: 34px;text-indent: 15px;}
+.subNav li :hover{color: rgb(47,142,209);}
+
+.searchBox{width: 190px;height: 30px;float: right;margin-top: 12px;background-color: #373737;}
+.searchA{width: 46px;height: 30px;float: left;}
+.searchBox input{width: 100px;height: 30px;float: left;color: #a8a8a8;background-color: none;border:0;background-color: transparent;}
+.searchA span{font-size: 12px;line-height: 30px;height: 30px;color: rgb(131,131,131);text-indent: 5px;}
+.searchBox a{width: 34px;height: 30px;float: right;background-image: url("../css/images/001.png");}
+.searchBox a:hover{background-color: #f00;color: #fff;}
+
+/*焦点图*/
+.banner{width: 100%;height: 450px;padding-top: 54px;background-color: #000000;z-index: 500;}
+.bannerBox{width: 25%;height: 100%;float: left;position: relative;}
+.alpha{ background-position: top center;opacity:0.8;position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;}
+.alpha1{background-image:url("../images/01.jpg");}
+.alpha2{background-image:url("../images/02.jpg");}
+.alpha3{background-image:url("../images/03.jpg");}
+.alpha4{background-image:url("../images/04.jpg");}
+.alpha5{background-image:url("../images/05.jpg");}
+.alpha6{background-image:url("../images/06.png");}
+.boxTitle{width: 41px;height: 34px;position: absolute;top: 0px;left: 10px;display: block;background-image: url("../css/images/001.png");background-position: -34px 0;color: #fff;text-align: center;line-height: 34px;}
+.boxLink{width: 96%;padding: 10px 2%;position: absolute;bottom: 0;left: 0;background-image: url("../css/images/002.png");}
+.boxLink a{color: #fff;font-size: 16px;width: 100%;display: block;}
+.bannerBox2{width: 100%;height: 50%;position: relative;}
+
+/*苹果专区导航*/
+.iosMenu{width: 100%;height: 50px;background-color: #101010;}
+.iosMenuInner{width: 1160px;margin: auto;height: 50px;}
+.iosMenuInner li{height: 50px;float: left;padding: 0 28px 0 28px;}
+.iosMenuInner a{line-height: 50px;font-size: 14px;color: #c2c2c2;text-align: center;}
+.iosMenuInner a:hover{color: rgb(47,142,209);}
+.iosLogo{padding: 0 24px 0 24px;background-image: url("../css/images/001.png");background-position: -75px 2px;text-indent: 16px;background-color: #fff;}
+#iosChnnel{color: rgb(47,142,209);font-weight: bold;font-size: 16px;}
+.share{width: 105px;height: 50px;float: right;padding-left: 15px;}
+.share a{width: 26px;height: 26px;display: block;float: left;margin: 15px 3px 10px 3px;background-image:url("../css/images/001.png"); }
+.share1{background-position: -68px -60px;}
+.share2{background-position: -34px -60px;}
+.share3{background-position: 0px -60px;}
+
+/*苹果专区内容*/
+.iosContent{width: 1160px;margin: auto; height: auto;}
+.ioshd{width: 100%;height: 40px;margin-bottom: 20px;margin-top: 40px;background: url("../css/images/titlebg.gif") repeat-x 0 16px;}
+.iosbd{width: 100%;height: 370px;}
+.hdLeft{width: 174px;height: 40px;float: left;background-color: #fff;}
+.hdRight{width: 70px;height: 42px;float: right;background-color: #fff;}
+.img1{width: 40px;height: 40px;float: left;background-image: url("../css/images/001.png");background-color: #25aafc;margin-right: 12px;}
+.iNews{background-position:0 -121px; }
+.iReviews{background-position: -80px -121px;}
+.iGuides{background-position: -280px -121px;}
+.iYejie{background-position: -120px -121px;}
+.iVideo{background-position: -200px -121px;}
+.iceshi{background-position: -240px -121px;}
+.ikaifu{background-position: -240px -121px;}
+
+
+
+.desCh{font-size: 20px;line-height: 20px;}
+.desEng{display: block;margin-top: 7px;color: #979797;}
+.hdRight a{float: right;font-size: 14px;color: #6e6e6d;line-height: 40px;}
+.hdRight a:hover{color: #25aafc;}
+.iosbd ul{width: 2000px;height: 370px;display: block;}
+.iosbd li{width: 275px;height: 370px;float: left;margin-right: 20px;position: relative;}
+.pic{width: 275px;height: 171px;}
+.blink{display: block;line-height: 26px;padding:12px 0;font-size: 16px;color: #282828;font-weight: bold;}
+.blink:hover{color: #25aafc;}
+.time{float: right;color: #c2c2c2;line-height: 20px;}
+.time img{position: relative;top: -1px;display: block;float: left;margin-top: 5px;margin-right: 5px;}
+.iosbd b{color: rgb(104,104,104);}
+.picDes{margin-top: 12px;color: rgb(104,104,104);}
+.keyWord{color: #25aafc;}
+
+.scoreShow{width: 70px;height: 70px;top: 50px;left: 104px;position: absolute;background-image: url("../css/images/f.png");font-style: italic;line-height: 70px;text-align: center;font-size: 16px;color: #fff;text-indent: -4px;}
+.scoreShow:first-letter{font-size: 30px;}
+.scoreShow1{background-position:-140px -70px; }
+.scoreShow2{background-position:0px -70px; }
+.scoreShow3{background-position:-420px -70px; }
+.scoreShow4{background-position:-140px -70px; }
+
+/*---手游排行---*/
+.list{width:545px;height: auto;float: left;margin-top: 30px;margin-bottom: 30px;}
+.ceping{float: right;}
+.listTitle{width: 100%;height: 36px;background-color: #333333;}
+.listTitle span{float:left;color: #fff;font-size: 15px;padding-left: 15px;line-height: 36px;}
+.ttFr{width: 39px;height: 36px;float: right;background-image: url("../css/images/001.png");background-position: 0 -161px;}
+.ttFr:hover{background-position: 0 -197px;}
+.listBox{width: 100%; height: 88px;border-bottom: 1px solid #efefef;margin-top: 24px;}
+.gmMark{width: 23px;height: 40px;display: block;float: left;padding-top: 27px;color: #fff;background-image: url("../css/images/001.png");background-position: -43px -161px;text-align: center;line-height: 1.2;margin-right: 20px;}
+.gmPic{float: left;margin-top: 3px;margin-right: 20px;}
+.gmPic img{width: 66px;height: 66px;border-radius: 10px;}
+.gmDetail{width: 295px;height: 88px;float: left;}
+.gmtt{color: rgb(89,89,89);font-size: 15px;}
+.gmdd{color: #25aafc;display: block;margin-top: 5px;}
+.gmBtn{margin-top: 5px;}
+.btnA{margin-right: 8px;width: 51px;height: 20px;line-height: 20px;background-image: url("../css/images/001.png");background-position: 0 -240px;display: inline-block;float: left;text-align: center;color: #585858;}
+.btnA:hover{background-position: 0px -260px;color: #fff;}
+.btnAS{background-position: 0 -260px;color: #fff;}
+.gmScore{width: 58px;height: 46px;float: right;margin-top: 11px;border-radius: 3px;border: 1px solid #e4e4e4;color:rgb(126,126,126);font-size: 22px;font-style: italic;line-height: 46px;text-align: center;}
+
+/*热点推荐*/
+#huan{background-color: #25aafc;color:#fff;padding: 0 5px 0 5px;cursor: pointer;width: 46px;height: 40px;line-height: 40px;text-align: center;}
+.hot973{width: 100%;height: 164px;position: relative;overflow: hidden;margin-top: 20px;}
+.hot973 ul{width: 9000px;height: 100%;position: absolute;top: 0;left: 0;}
+.box{width: 174px;height: 164px;float: left;margin-right: 22px;display: block;overflow: hidden;position: relative;}
+.box img{width: 174px;height: 112px;}
+.mask{position: absolute;width: 100%;height: 32px;line-height: 32px;color: #fff;font-size: 15px;text-align: center;top: 80px;left: 0px;background-image: url("../css/images/002.png");}
+.box p{font-size: 14px;margin-top: 5px;color: #595959;}
+.box a:hover{color: #25aafc;}
+
+/*苹果区视频*/
+.iosVideo{width: 100%;height: 394px;margin-top: 20px;overflow: hidden;}
+.con{width: 1200px;height: 1000px;}
+.bigBox{width: 352px;height: 394px;display: block;float: left;}
+.bigBox img{width: 352px;height: 394px;}
+.smallBox{width: 192px;height: 192px;float: left;display: block;}
+.videoBox{margin: 0 10px 10px 0;position: relative;}
+.start{width: 58px;height: 58px;position: absolute;top: 48px;left: 66px;background-image: url("../css/images/start.png");background-position: 0 -105px;}
+.bigBox .start{position: absolute;top: 140px;left: 129px;width: 94px;height: 94px;background-image: url("../css/images/start.png");background-position: 0 0;}
+.videoDes{position: absolute;bottom: 0;left: 0;width: 162px;height: 48px;padding: 39px 15px 5px;font-size: 14px;line-height: 22px;background-image: url("../css/images/fmask.png");color: #fff;}
+.bigBox .videoDes{position: absolute;bottom: 0;left: 0;width: 322px;height: 48px; color: #fff;font-size: 16px;padding: 80px 15px 0;background-image: url("../css/images/fmask.png");background-position: 0 bottom;line-height: 30px;}
+.smallBox img{width: 192px;height: 192px;}
+
+/*测试表*/
+.testList{width: 100%;height: 411px;}
+.listL{width: 555px;height: 411px;float: left;}
+.listR{width: 555px;height: 411px;float: right;margin-left: 50px;}
+.testTable{width: 100%;text-align: center;color: #333333;text-align: center;}
+.testTable th{background-color: #eaeaea;height: 40px;margin-bottom: 10px;font-size: 14px;font-weight: bold;border:1px solid #fff;}
+.testTable td{font-size: 12px;margin-bottom: 10px;height: 40px;}
+td b a{color: #595959;}
+td b a:hover{color:#25aafc;}
+.ka{background-color: #35aafc;border-radius: 3px;color: #fff;height: 20px;line-height: 20px;width: 44px;display: block;margin: 0 auto;}
+
+/*版权*/
+.footer{width: 100%;height: 70px;padding: 20px 0 20px 0;background-color: #292929;margin-top: 50px;}
+.copyright{width: 980px;height: 70px;margin: 0 auto;text-align: center;color: #5b5b5b;}
+.copyright a{color: #5b5b5b;font-size: 12px;}
+.copyright a:hover{color: #fff;}
+.copyright span{color: #5b5b5b;}

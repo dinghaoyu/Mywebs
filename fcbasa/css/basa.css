@@ -1,0 +1,164 @@
+*{margin: 0;padding: 0;}
+body{width: 100%; background: #D9DFDF url("../css/images/97778300.jpg") no-repeat fixed center top;color: #666666;font-size: 12px;font-family: Tahoma;}
+li{list-style: none;}
+a{text-decoration: none;}
+a:hover{text-decoration: underline;color: #FF6600;}
+
+/*主要框架*/
+.topBar{width: 100%;min-width: 1000px;height: 28px;background: url("../css/images/fcb_sprite.png") repeat-x 0 0 ;}
+.main{width: 995px;margin: 0 auto;height: 1642px;}
+.fudongAll{width: 58px;margin: 0 auto;margin-right: 30px;z-index: 99999999}
+.fudong{width: 58px;position: fixed;float: left;bottom: 300px;}
+.fudong a{font-weight: bold; padding: 5px 0 5px; width: 30px;height: 100px;display: block;background-color:rgb(18,36,64);color:#fff;text-align: center;line-height: 14px;font-size: 18px;}
+
+
+/*页眉*/
+.topBarInner{width: 995px;height: 28px;line-height: 28px; margin: 0 auto;}
+.left{width:120px;height: 25px;display: inline;font-weight: bold;background: url("../css/images/fcb_sprite.png") no-repeat 0 -66px;float: left;padding-top: 3px;}
+.left a{height: 21px;line-height: 21px;padding-left: 24px;color: #666666;font-weight: bold;background: url("../css/images/fcb_sprite.png") no-repeat -131px -63px;display: inline-block;vertical-align: top;}
+.left a:hover{background-position: -131px -87px;color: #242424;}
+.middle{display: inline;float: left;height: 28px;overflow: hidden;background: url("../css/images/fcb_sprite.png") repeat-x 0 -34px;}
+.list{padding: 4px 10px 0 0;}
+.list li{float: left;border:1px solid #A3A6AB;height: 18px;margin-left: 3px;line-height: 18px;background-color: #fff;}
+.list li a{color: #666;font-size: 10px;background: url("../css/images/fcb_sprite.png") repeat-x 0 -110px;padding: 0 10px;height: 18px;line-height: 18px;display: inline;float: left;}
+.list li a:hover{background-position: 0 -152px;color: #fff;}
+.right{width: 56px;height: 18px;margin-top: 5px;border:1px solid #A3A6AB;float: right;text-align: center;line-height: 18px;background: url("../css/images/fcb_sprite.png") repeat-x 0 -110px;cursor: pointer;}
+
+/*头部*/
+.header{width: 995px;height: 101px;padding-top:10px; }
+.fcbLogo{float: left;}
+.fcbLogo img{width: 250px;height: 90px;}
+.qatLogo{float: right;}
+.qatLogo img{width: 728px;height: 90px;}
+
+/*主要内容*/
+.con{width: 995px;background-color:#DAE0E0;border:1px solid #4E5F6F;float: left;}
+.nav{width: 100%;height: 65px;}
+.navhd{width: 100%;height: 35px;background-color: rgb(18,36,64);}
+.navhd ul{height: 100%;}
+.hdList{width: 91px;float: left;border-right: 1px solid #000;height: 100%;font-size: 14px;text-align: center;line-height: 35px;}
+.hdList a,.bdList a{color: #fff;}
+.hdList a:hover{font-weight: bold;color: #e6aa0a;}
+.bdList a:hover{color: #e6aa0a;}
+.navbd{width: 100%;height: 30px;}
+.cur{background-color:rgb(130,0,0);}
+.cur a{color: #e6aa0a;font-weight: bold;}
+.bdUl{background-color: rgb(130,0,0);width: 100%;height: 30px;}
+.bdList{height: 30px;margin-right: 35px;text-align: left;line-height: 30px;font-size: 14px;color: #fff;float: left;}
+.tit{width: 75px;height: 30px;padding-left: 35px;margin-right: 15px;background-image: url("../css/images/bg_nav_panels.png");}
+.tit a{color: #e6aa0a;font-weight: bold;}
+
+/*焦点区域*/
+.focus{width: 955px;height: 452px;padding: 20px 20px;background-color: #000;}
+.focusAera{width: 640px;height: 447px;float: left;}
+.focusPic{width: 640px;height: 360px;background-color: #fff;position: relative;}
+.focusTri{width: 640px;height: 72px;margin-top: 15px;}
+.focusTri li{width: 128px;height: 72px;margin-left: 25px;float: left;}
+.focusTri li img{width: 128px;height: 72px;}
+.picMain{width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
+.picTxt{position: absolute;bottom: 0px;left: 0px;width: 620px;height: 75px;padding: 10px 10px 5px 10px;}
+.picMain img{width: 640px;height: 360px;}
+.picTxt h4{position: relative;height: 27px;margin-bottom: 5px;z-index: 2;}
+.picTxt h4 a{color: #fff;font-size: 18px;font-family: 微软雅黑;font-weight: normal;}
+.picTxt h4 a:hover{text-decoration: underline;}
+.picTxt p{color: #fff;z-index: 2;position: relative;}
+.picTxt p a{color: #fff;}
+.cover{position: absolute;top: 0px;left: 0px;background-color: #000;opacity: 0.7;width: 640px;height: 90px;}
+
+.focusRight{width: 300px;height: 460px;float: right;}
+.focusRight:after{content: ".";height: 0;visibility: hidden;display: block;clear: both;}
+.nextMatch{width: 300px;height: 90px;background: url("../css/images/bg_next_match.png") repeat-x 0 bottom;}
+.nhd{width: 284px;height: 22px;border-bottom: 1px solid #333333;padding:0 8px 0 8px;}
+.nbd{width: 280px;height: 57px;padding: 5px 10px 5px 10px;}
+.nleft{float: left;color: #fff;}
+.nright{float: right;color: #fff;}
+.picBox{float: left;margin: 5px 10px;}
+.picBox img{width: 31px;height: 31px;}
+.txtBox{float: left;width: 190px;height: 57px;}
+.txtBox p{height: 18px;color: #fff;}
+.desc{margin-bottom: 5px;width: 100%;}
+.desc a{color: #fff;font-weight: bold;}
+.desc a:hover{text-decoration: underline;}
+.weibo{width: 300px;height: 100px;background-color: #fff;margin-top: 10px;}
+.weibo img{width: 300px;height: 100px;}
+.nike{width: 300px;height: 250px;margin-top: 10px;}
+.nike img{width: 300px;height: 250px;}
+
+/*主体部分*/
+.container{width: 975px;height: 953px;padding: 10px 10px 10px 10px;background-color: #b6c0c2;}
+.conLeft{float: left;width: 645px;height: 953px;}
+.leftBox{width: 660px;height: 515px;}
+.lpBox{box-shadow: 0px 0px 5px 1px #666666; width: 315px;height: 250px;float: left;margin: 0 15px 10px 0;background: url("../css/images/bg_mbox_blue.png" ) no-repeat right 0;}
+.boxHd{width: 100%;height: 35px;}
+.boxHd a{float: right;font-size: 14px;font-weight: bold;color: #fff;margin: 7px 10px 0 0;}
+.boxBd{margin-left: 15px;}
+.boxBd li{height: 21px;margin-bottom: 5px;}
+.boxBd a,.boxBd span{color: #fff;}
+.boxtt{float: left;font-size: 14px;color: #fff;font-weight: bold;margin: 7px 0 0 15px;}
+.lpBox img{width: 315px;height: 210px;}
+.wonPic{width: 605px;height: 242px;padding: 10px 20px 20px 20px;margin-top: 10px;background-color: #000;box-shadow:  0 0 5px 1px #666666;}
+.wonHd{width: 605px;height: 22px;}
+.wonBd{width: 605px;height: 220px;margin-top: 15px;}
+.boxS{margin: 0 0;}
+.wonHd a{float: right;font-size: 12px;color: #ccc;}
+.wonList{width: 120px;height: 97px;margin:0 20px 15px 0;float: left;}
+.wonList img{width: 120px;height: 65px;}
+.wonList p{margin-top: 5px;text-align: center;}
+.wonList p a{color:  #fff;}
+.bordPic{width: 610px;height: 100px;margin: 0 0 0 10px;padding-top: 30px;}
+.leftFoot{width: 645px;height:151px;background-color: rgb(102,102,102);box-shadow: 0 0 5px 1px #666666;}
+.bordFl{float: left;}
+.bordFr{float: right;}
+.leftFoot img{width: 300px;height: 100px;}
+
+/*右侧部分*/
+.conRight{width: 318px;height: 951px;float: right;}
+.saicheng{width: 288px;height: 336px;padding: 5px 15px 10px 15px;background-color: #c9d3d5;box-shadow: 0 0 5px 1px #666666;}
+.saihd{width: 100%;height: 34px;line-height: 34px;}
+.saibd{width: 100%;height: 300px;}
+.saihd a{font-size: 14px;color: #000;font-weight: bold;}
+.saibd li{height: 50px;width: 286px;background-color: #e5eaea;border:1px solid #b9c3c4;margin-bottom: 10px;}
+.saiPic{width: 50px;height: 50px;float: left;}
+.saiPic img{width: 50px;height: 50px;}
+.saiTxt{width: 225px;height: 40px;padding: 5px;float: right;}
+.saiTxt a{color: #000;}
+.saiTxt p{margin-top: 8px;}
+.qiuyi{width: 318px;height: 250px;margin-top: 10px;box-shadow: 0 0 5px 1px #666666;}
+.qiuyi img{width: 318px;height: 250px;}
+.tcWeibo{width: 316px;margin-top: 10px;position: relative;border:1px solid #34b1db;}
+.userInfo{width: 312px;height: 64px;padding: 10px 0 0 6px;background: url("../css/images/bgs0.png") repeat-x;}
+.userIcon{width: 56px;height: 52px;float: left;}
+.userIcon img{width: 52px;height: 52px;margin-left: 4px;}
+.userTxt{position: absolute;left: 70px;top: 10px;width: 154px;height: 50px;}
+.userTxt a{color: #0b7ba3;font-size: 14px;font-weight: bold;}
+..userTxt a img{width: 14px;height: 14px;}
+.listen{width: 78px;height: 21px;display: block;background-image: url("../css/images/listen.png");}
+.otips{position: absolute;top: 10px;right: 10px;width: 18px;height: 18px;}
+.otips img{width: 18px;height: 18px;}
+.weiboList{height: 260px;overflow-x: hidden;overflow-y: auto;background-color: #fff;}
+.weiboArea{padding: 6px;}
+.weiboArea li{border-bottom: 1px solid #cee8f1;padding: 8px 2px 0 2px;line-height: 160%;word-break: break-all;word-wrap: break-word;}
+.l{float: left;display: block;}
+.r{float: right;display: block;padding-left: 16px;white-space: nowrap;background: url("../css/images/act.gif") no-repeat 0 -32px;}
+.weiboArea a{color: #000;}
+.weiboinfo{height: 20px;}
+
+/*footer*/
+.footer{width: 995px;height: 403px;background-color: #000;margin: 0 auto;}
+.footer a:hover{color: #FF6600;}
+.sponsors{width: 100%;height: 50px;text-align: center;padding: 10px 0;}
+.sponsors li{margin: 0 5px;vertical-align: middle;display: inline-block;}
+.fotMid{width: 965px;height: 272px;border-top: 1px solid #333;border-bottom: 1px solid #333;padding: 0 15px;}
+.mLeft{float: left;padding: 15px 10px 15px 0;border-right: 1px solid #333;width: 150px;height: 175px;}
+.mMiddle{float: left;width: 300px;height: 200px;padding: 15px 0 15px 10px;}
+.mMiddle ul{float: left;}
+.mLeft li,.mMiddle li{height: 25px;color: #fff;text-indent: 20px;font-size: 14px;}
+.mLeft li a,.mMiddle li a{color: #fff;}
+.mmList{width: 150px;}
+.mRight{float: right;width: 333px;height: 273px;background: url("../images/bg_footer_default.png") right 0;}
+.fotBot{position: relative; width: 956px;height: 19px;padding: 20px 0;margin: 0 15px;}
+.fotBot span,.fotBot a{margin-right: 15px;color: #666;}
+.copyRight{width: 100%;height: 100%}
+.agreeMent{position: absolute;top: 10px;right: 15px;width: 150px;height: 44px;}
+.agreeMent a{float: right;width: 92px;height: 22px;display: block;background: url("../css/images/fcb_sprite.png") no-repeat 0 -491px;}
+.agreeMent a:hover{background-position: -93px -491px}

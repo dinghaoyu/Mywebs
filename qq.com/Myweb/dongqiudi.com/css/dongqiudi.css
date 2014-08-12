@@ -1,0 +1,178 @@
+*{margin: 0; padding: 0;}
+body{ width: 100%; text-align: center; font-size: 12px; font-family: 'Microsoft Yahei', tahoma, sans-serif;color: rgb(70,69,69);text-decoration: none;}
+img{ border: 0px; }
+ul,li{ list-style: none; list-style-position: outside; }
+
+/*---主要框架---*/
+#header{width: 100%;min-width: 1000px;height: 132px;}
+#focus{width: 1000px;height: 381px;margin:0 auto 17px;}
+#appPic{width: 1000px;height: 120px;margin:0 auto 17px;}
+#lm1{width: 1000px;height: 692px;margin:0 auto 17px;}
+#lm2{width: 1000px;height: 873px;margin:0 auto 17px;}
+#footer{width: 100%;height: 228px;background-color: #f1f1f1;}
+/*---主要框架end---*/
+
+/*---导航栏---*/
+#topBar{width: 100%;height: 32px;background-color: #2e9f54;}
+.topBarInner{width: 1000px;height:32px;margin: 0 auto; }
+.topBarInner span{float: left;width: 120px;height: 32px;padding-left: 22px;line-height: 32px;color: #fff;font-family: 'Microsoft Yahei';}
+.topBarInner a{float: right;padding-right: 22px;line-height: 32px;height: 32px;color: #fff;font-family: 'Microsoft Yahei';text-decoration: none;}
+.topBarInner a:hover{text-decoration: underline;}
+
+#topNav{width: 1000px;height: 100px;margin: auto;position: relative;}
+.logo{width: 150px;height: 67px;position: absolute;top: 15px;left: 22px;background-image: url("images/sprite.png");}
+.nav{width: 596px;height: 58px; position: absolute;top: 25px;right: 30px;}
+.nav li{width: 56px; height: 58px;float: left;margin-left: 60px;}
+.nav li:hover{border-bottom: 2px solid #2e9f54;}
+.navRight{width: 60px;height: 56px;display: block;padding:0 6px 0 6px;border-bottom: 2px solid #fff; }
+.navLeft{width: 44px;height: 56px;display: block;padding:0 6px 0 6px;border-bottom: 2px solid #fff; }
+.nav i{width: 30px;height: 30px;background-image: url("images/sprite.png");background-position: -171px -37px;display: inline-block;}
+.nav a{color: rgb(51, 51, 51);font-size: 16px;text-decoration: none;font-family: 'Microsoft Yahei';}
+#navNews i{background-position: -205px 0;}
+#navNews:hover i{ background-position: -205px -38px;}
+#navCol i{background-position: -236px 0;}
+#navCol:hover i{background-position: -236px -38px;}
+#navViedo i{background-position: -268px 0;}
+#navViedo:hover i{background-position: -268px -37px;}
+#navScore{width: 60px;}
+#navScore i{margin: 0 10px 0 10px;background-position: -337px 0;}
+#navScore:hover i{background-position: -337px -38px;}
+#yingchaoHead{border-bottom: 2px solid rgb(69, 138, 91);background-color: rgb(46, 159, 84);color: #fff;font-weight: bold;}
+.current a{color:rgb(69, 138, 91);}
+#navS{width: 72px;}
+.nav a:hover { border-bottom-color:#458a5b 1px solid; text-decoration: none; color:#458a5b; }
+
+
+/*---导航栏end---*/
+
+
+/*---焦点新闻---*/
+.focusL{width: 420px;height: 381px;float: left;}
+.focusR{width: 560px;height: 310px;float: right;border: 1px solid #ccc;}
+.focusL h3{color: #458a5b;height: 22px;line-height: 22px;margin-bottom: 5px;}
+.tag{background-color: rgb(46, 159, 84);float: left;width: 38px;height: 22px;color: #fff;font-size: 12px;}
+.tagS{width: 86px;}
+h3 span{float: left;line-height: 22px;margin-left: 8px;font-size: 12px;}
+h3 a{float: left;margin-left: 8px;color:#458a5b;font-size: 12px;text-decoration: none; }
+h3 a:hover{text-decoration: underline;}
+
+.focusL p{height: 21px;margin: 0 5px 0 5px;}
+.focusL p span{float: left;line-height: 22px;margin-left: 8px;font-size: 12px;}
+.focusL p a{float: left;margin-left: 8px;color:#2d374b;font-size: 12px;text-decoration: none;line-height: 22px;}
+.focusL p a:hover{text-decoration: underline;color: rgb(46,159,84);}
+.hr1{width: 418px;border:1px solid #ddd;margin: 13px 0 13px 0;display: block;}
+/*---焦点新闻end---*/
+
+/*---焦点图---*/
+.focus-slide { height:310px; background: #000;}
+.focus-slide{position:relative;width:560px;height:310px;overflow:hidden;}
+.focus-slide .js_switch_nav{position:absolute;bottom:12px;right:15px; z-index: 30;}
+.focus-slide .js_switch_nav li{float:left;width:20px;height:16px;line-height:16px;cursor:pointer; background-image:url("images/focus-slide-nav.png"); background-repeat: no-repeat;background-position:-23px -2px; text-indent:-99em; overflow: hidden;}
+.focus-slide .js_switch_nav .js_active{background-position: -3px -2px;}
+.focus-slide .js_switch_ct li{width:560px;height:310px;overflow:hidden; position: relative;}
+.focus-slide .js_switch_ct h3 { height: 40px; line-height: 40px; position: absolute; width: 100%; bottom:0; left:0;filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#B2000000', endColorstr='#B2000000');background:rgba(0,0,0,0.7); background: transparent;background: rgba(0,0,0,0.7); }
+.focus-slide .js_switch_ct h3 a{ display: block; padding: 0 10px; width:380px; overflow: hidden; font-size: 14px; font-weight: 700; color: #fff;text-align: left;}
+.focus-slide .js_switch_ct li img { width:560px;height:310px;}
+.js_switch_panel img{width: 560xp;height: 310px;}
+/*---焦点图end---*/
+
+/*---栏目1---*/
+.lm1Left{width: 730px;height: 692px;float: left;}
+.lm1LTitle{width: 730px;height: 32px;background-color: #f1f1f1;}
+.lm1LTitle span{line-height: 32px; width: 108px;height: 32px;background-color: #2e9f54;font-size: 18px;float: left;color: #fff;letter-spacing: 15px} 
+.lm1LTitle i{width: 32px;height: 36px;float: left;margin-right: 6px;background-image: url("images/sprite.png");background-position: -72px -79px;}
+.lm1LContent{width: 730px;height: 652px;padding-top: 8px;}
+.lm1LCLeft{width: 366px;height: 554px;float: left;}
+.lm1LCLTitle{width: 366px;height: 34px;background-color: #f1f1f1;}
+.lm1LCLTitle span{float: left;padding-left: 10px;line-height: 34px;height: 34px;font-size: 14px;font-weight: bold;}
+.picNews{width: 366px;height: 105px;padding: 12px 0 12px 0;border-bottom: 1px solid #ccc;}
+.picNews a{float: left;}
+.picNews img{width: 140px;height: 105px;}
+.cont{width: 216px;height: 69px;margin-left: 10px;float: left;}
+.cont h5{width: 216px;height: 22px;}
+.cont a{height: 22px;line-height: 22px;float: left;display: block;font-weight: bold;margin-bottom: 3px;text-decoration: none;color: rgb(69, 138, 91);}
+.cont a:hover{text-decoration: underline;}
+.cont span{text-align: left;width: 216px;float: left;line-height: 20px;}
+.divide{width: 80px;height: 20px;line-height: 20px; text-align: center;font-weight: bold;margin: -10px auto 0;background-color: #fff;}
+.contS h5,.contS span{width: 366px;}
+.mostNews li{width: 366px;height: 47px;padding: 12px 0 12px 0;border-bottom:1px solid #ccc; }
+
+.lm1LCRight{width: 332px;height: 652px;padding-left: 16px;border-left: 1px solid #ddd;float: right;}
+.lm1LCLTitleR{width: 332px;}
+.picNewsR{width: 332px;}
+.contR,.picNewsR span{width: 182px;}
+
+.lm1Right{width: 245px;height: 680px;float: right;}
+.lm1RTitle{width: 245px;height: 32px;background-color: rgb(46, 159, 84);color: #fff;font-size: 18px;line-height: 32px;}
+
+/*---栏目2---*/
+.leagueTitle{width: 730px;height: 32px;background-color: #f1f1f1;}
+.leagueTitle span{line-height: 32px; width: 108px;height: 32px;background-color: #2e9f54;font-size: 18px;float: left;color: #fff;letter-spacing: 15px} 
+.leagueTitle i{width: 32px;height: 36px;float: left;margin-right: 6px;background-image: url("images/sprite.png");background-position: -144px -79px;}
+.lm2Left{width: 730px;height: 692px;float: left;}
+.lm2Right{width: 245px;height: 868px;float: right;}
+
+
+.videoTitle{width: 730px;height: 32px;background-color: #f1f1f1;margin-top: 17px;}
+.videoTitle span{line-height: 32px; width: 108px;height: 32px;background-color: #2e9f54;font-size: 18px;float: left;color: #fff;letter-spacing: 15px} 
+.videoTitle i{width: 32px;height: 36px;float: left;margin-right: 6px;background-image: url("images/sprite.png");background-position: 0px -79px;}
+
+.playerTitle{width: 245px;height: 32px;background-color: #f1f1f1;}
+.playerTitle span{line-height: 32px; width: 108px;height: 32px;background-color: #2e9f54;font-size: 18px;float: left;color: #fff;letter-spacing: 15px} 
+.playerTitle i{width: 32px;height: 36px;float: left;margin-right: 6px;background-image: url("images/sprite.png");background-position: -108px -79px;}
+.videoContent{width: 730px;height: 330px;margin-top: 10px;}
+
+/*---积分榜---*/
+.lm1RContent{width: 245px;height: 642px;padding-top: 8px;}
+.scoreNav{width: 237px;height: 29px;padding: 6px 0 0 8px;border-bottom: 3px solid rgb(46, 159, 84);background-color: #f1f1f1;}
+.scoreNav span{width: 24px;height: 29px;padding: 0 10px 0 10px;float: left;display: block;text-decoration: none;font-size: 12px;line-height: 29px;text-align: center;color: #2d374b;cursor: pointer;}
+#current{color: #fff;background-color: rgb(46, 159, 84);font-weight: bold;}
+.scoreCon{width: 245px;height: 593px;}
+thead {display: table-header-group;vertical-align: middle;border-color: inherit;}
+th{height: 33px;line-height: 33px;font-weight: 700px;text-align: center;}
+.t1{width: 38px;height: 33px;}
+.t2{width: 132px;height: 33px;}
+.standing-table{border-collapse:collapse;}
+.standing-table tr{width: 245px;height: 27px; border-bottom: 1px solid #ccc;}
+
+/*---联赛---*/
+.leagueContent{width: 798px;height: 436px;padding-top: 8px;}
+.minbox{width: 331px;height: 204px;margin: 0 68px 10px 0;float: left;}
+.minboxHead{width: 331px;height: 36px;border-bottom: 2px solid #bbb;}
+.minboxHead span{padding:0 20px 0 20px; height: 36px;line-height: 36px;font-weight: bold;float: left;font-size: 14px;color: #2d374b;border-bottom: 2px solid #a81300;} 
+.more{width: 24px; height: 38px;line-height: 38px;float: left;font-size: 12px;color: #2d374b;text-decoration: none;display: block;float: right;} 
+.minboxBody{width: 331px;height: 162px;padding-top: 4px;}
+.minboxBody h6{width: 331px;height: 30px;}
+.minboxBody h6 a{color: rgb(69, 138, 91);line-height: 30px;font-weight: 700;display: block;height: 30px;text-align: left;text-decoration: none;}
+.minboxBody h6 a:hover}{text-decoration: underline;color:rgb(46, 159, 84); }
+.minboxBody li{height: 22px;width: 331px;}
+.minboxBody li a{height: 17px;line-height: 17px;float: left;text-decoration: none;color: #2d374b;}
+.minboxBody li a:hover{text-decoration: underline;color:rgb(46, 159, 84);}
+.minboxBody li span{float: right;color: #bbb;}
+
+/*---视频---*/
+.videoHead{width: 730px;height: 34px;border-bottom: 2px solid #919191;}
+.videoBody{width: 730px;height: 298px;margin-top:14px; }
+.videoHead a{width: 48px;height: 34px;border-bottom: 2px solid #81300;float: left;display: block;padding: 0 20px 0 20px;line-height: 34px;text-align: center;font-size: 12px;color: #2d374b;text-decoration: none;}
+#latest{color: #a83100;border-bottom: 2px solid #a83100;}
+.videoUL1,.videoUL2{width: 762px;height: 298px;}
+.videoUL2{display: none;}
+.videoUL1 li,.videoUL2 li{width: 120px;height: 129px;margin: 0 32px 20px 0;float: left;}
+.pic{width: 120px;height: 90px;display: block;position: relative;}
+.pic img{width: 120px;height: 90px;}
+.pic i{position: absolute;width: 41px;height: 41px;left: 50%;top: 50%;background-image: url("../css/images/player-icon.png");margin: -20px 0 0 -20px;}
+.des{width: 120px;height: 36px;display: block;margin-top: 3px;text-decoration: none;color: #2d374b;}
+.des:hover{text-decoration: underline;color:rgb(46, 159, 84); }
+
+/*---球员---*/
+.playerContent{width: 245px;height: 578px;padding-top: 8px;}
+.xiaoyaoHead{width: 237px;height: 29px;padding: 6px 0 0 8px; border-bottom: 3px solid #2e9f54;background-color: #f4f4ee;}
+.xiaoyaoHead a{float: left;width: 48px;height: 29px;padding: 0 10px 0 10px;color: #fff;background-color:#2e9f54;line-height: 29px;text-decoration: none;font-weight: bold;}
+.xiaoyaoBody ul{width: 245px;height: 540px;}
+.xiaoyaoBody li{width: 225px;height: 57px;padding: 16px 10px 16px 10px;border-bottom: 1px solid #ddd}
+.xiaoyaoPic{width: 70px;height: 55px;margin-right: 10px;float: left;}
+.xiaoyaoPic img{width: 70px;height: 55px;}
+.contYao{width: 145px;height: 57px;float: right;text-align: left;}
+.contYao h5{width: 216px;height: 22px;}
+.contYao a{height: 22px;line-height: 22px;float: left;display: block;font-weight: bold;margin-bottom: 3px;text-decoration: none;color: rgb(69, 138, 91);}
+.contYao a:hover{text-decoration: underline;}

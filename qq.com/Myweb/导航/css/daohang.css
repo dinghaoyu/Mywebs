@@ -1,0 +1,14 @@
+body{background-image: url("../images/12.jpg");background-repeat: no-repeat;}
+#main{width: 345px;height: 600px;border-radius: 20px;border: 1px solid #ccc;margin: 30px auto;background-color: #fff;opacity:0.7 }
+.mainTitle{width: 300px;height: 40px;margin: 15px auto 0;border-top:2px solid #2e9f54;font-size: 18px;line-height: 40px;text-align: center;font-weight: bold;color: #2e9f54;}
+.mainContent{width: 345px;height: 470px;border:1px solid #ccc;}
+.home{width: 60px;height: 60px;border-radius: 100%;border: 1px solid #ccc;margin: 5px auto;cursor: pointer;background-color:rgb(207,205,130); }
+.app{width: 60px;height: 80px;float: left;margin: 20px 0 0 20px;}
+.appPic{width: 58px;height: 58px;border-radius: 5px;border: 1px solid #ccc;cursor: pointer;display: block;opacity:1;}
+.app img{width: 58px;height: 58px;}
+.appName{width: 60px;height: 20px;text-align: center;line-height: 20px;font-size: 12px;display: block;}
+#digTime{width: 570px;height: 30px;border: 1px solid #ccc;margin: 15px auto;opacity:0.5}
+.dig,.heng,.mao{background-image: url("../images/dig.png");float: left;width: 30px;height: 30px;background-color: #f1f1f1;}
+.kong{width: 30px;height: 30px;float: left;}
+.heng{background-position: 0 -300px;}
+.mao{background-position: 0 -330px;}

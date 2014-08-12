@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>欢迎来到董秋迪</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/dongqiudi.css">
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/switchable_v1.min.js"></script>
+	<script type="text/javascript" src="js/dongqiudi.js"></script>
+	<script type="text/javascript">
+$(document).ready(function() {
+	jQuery.jqtab = function(tabtit,tab_conbox,shijian) {
+		$(tab_conbox).find("ul").hide();
+		$(tabtit).find("a:first").addClass("current").show();
+		$(tab_conbox).find("ul:first").show();lm1RTitle
+		$(tabtit).find("a").bind(shijian,function(){
+			$(this).addClass("current").siblings("a").removeClass("current");
+			var activeindex = $(tabtit).find("a").index(this);
+			$(tab_conbox).children().eq(activeindex).show().siblings().hide();
+			return false;
+		});
+	};
+	//调用方法
+	$.jqtab("#tabs","#tab_conbox","click");
+	//$.jqtab("#tabs2","#tab_conbox2","mouseenter");
+});
+</script>
+</head>
+<body>
+	<div id="header">
+		<div id="topBar">
+			<div class="topBarInner">
+				<span>欢迎来到足球的世界！</span>
+				<a href="#">足球迷神器：懂球帝App下载</a>
+			</div>
+		</div>
+		<div id="topNav">
+			<a href="#" class="logo"></a>
+			<ul class="nav">
+				<li class="current">
+					<a href="#" class="navLeft">
+						<i></i>首页
+					</a>
+				</li>
+				<li>
+					<a href="#" class="navLeft" id="navNews">
+						<i></i>新闻
+					</a>
+				</li>	
+				<li>
+					<a href="#" class="navLeft" id="navCol">
+						<i></i>
+						专栏
+					</a>
+				</li>	
+				<li>
+					<a href="#" class="navLeft" id="navViedo">
+						<i></i>
+						视频
+					</a>
+				</li>	
+				<li id="navS">
+					<a href="#" class="navLeft" id="navScore">
+						<i></i>
+						积分榜
+					</a>
+				</li>				
+			</ul>
+		</div>
+	</div>
+	<div id="focus">
+		<div class="focusL">
+			<h3>
+				<span class="tag">头条</span>
+				<a href="#">只要你留言，球衣天天送！</a>
+				<span>|</span>
+				<a href="#">新赛季，穆里尼奥的首发是啥样</a>
+			</h3>
+			<p>
+				<a href="#">卖掉卢卡库，蓝军到底是对是错</a>
+				<span>|</span>
+				<a href="#">人员流失，本菲卡要卖卡多佐</a>
+			</p>
+			<p>
+				<a href="#">6-1！热刺热身大胜凯尔特人</a>
+				<span>|</span>
+				<a href="#">中能球迷扔水瓶！砸晕对方主帅</a>
+			</p>
+			<div class="hr1"></div>
+			<h3>
+				<span class="tag">国内</span>
+				<a href="#">中能球迷扔水瓶！砸晕对方主帅</a>
+				<span>|</span>
+				<a href="#">中甲综述：卓尔冲到积分榜第三</a>
+			</h3>
+			<p>
+				<a href="#">曼萨诺：要跟恒大掰掰手腕儿</a>
+				<span>|</span>
+				<a href="#">痛失好局！阿里汉与记者对吵</a>
+			</p>
+			<p>
+				<a href="#">巴蒂斯塔：对手进球我们就乱了</a>
+				<span>|</span>
+				<a href="#">库卡：球员们上半场毫无斗志</a>
+			</p>
+			<p>
+				<a href="#">进球脱裤子！陈志钊的激情庆祝</a>
+				<span>|</span>
+				<a href="#">国安3-0绿地，首次攻陷虹口</a>
+			</p>
+			<div class="hr1"></div>
+			<h3>
+				<span class="tag">国际</span>
+				<a href="#">范加尔：揭幕战范佩西不会出场</a>
+				<span>|</span>
+				<a href="#">贝赫拉米：德甲联赛欧洲最佳</a>
+			</h3>
+			<p>
+				<a href="#">拉斯-本德：我终于又能奔跑了</a>
+				<span>|</span>
+				<a href="#">马扎里赞维迪奇：他是顶级选手</a>
+			</p>
+			<p>
+				<a href="#">黑尔特：沙尔克有实力争冠</a>
+				<span>|</span>
+				<a href="#">罗杰斯：三狮大赛疲软是因恐惧</a>
+			</p>
+			<p>
+				<a href="#">截胡铁锤，热刺要拿下埃托奥</a>
+				<span>|</span>
+				<a href="#">P图无节操，马卡报被抓现行</a>
+			</p>
+			<div class="hr1"></div>
+			<h3>
+				<span class="tag tagS">比赛直播推荐</span>
+				<a href="#">阿森纳VS曼联 比赛视频直播</a>
+				<span>|</span>
+				<a href="#">巴萨VS皇家马德里</a>
+			</h3>
+			<p>
+				<a href="#">巴黎圣日耳曼VS里昂 比赛视频直播</a>
+				<span>|</span>
+				<a href="#">国际米兰VSAC米兰</a>
+			</p>
+		</div>
+		<div class="focusR">
+			<div class="focus-slide" id="focusSlide">
+				<ul class="js_switch_ct" style="position:absolute;width:2240px;left:0px;">
+					<li class="js_switch_panel" style="float:left;">
+						<a href="#" target="_blank"><img src="images/307-140P30S514O6.jpg" alt="利物浦2-0米兰，晋级决赛"></a>
+						<h3><a href="#" target="_blank">利物浦2-0米兰，晋级决赛</a></h3>
+					</li>
+					<li class="js_switch_panel" style="float:left;">
+						<a href="http://www.dongqiudi.com/news/32715.html" target="_blank"><img src="images/208-140P3061200451.jpg" alt="佩工确认：兰帕德租借加盟曼城"></a>
+						<h3><a href="http://www.dongqiudi.com/news/32715.html" target="_blank">佩工确认：兰帕德租借加盟曼城</a></h3>
+					</li>
+					<li class="js_switch_panel" style="float:left;">
+						<a href="http://www.dongqiudi.com/news/32714.html" target="_blank"><img src="images/208-140P305544Vb.png" alt="曼联杀进决赛！皇马热身三连败"></a>
+						<h3><a href="http://www.dongqiudi.com/news/32714.html" target="_blank">曼联杀进决赛！皇马热身三连败</a></h3>
+					</li>
+					<li class="js_switch_panel" style="float:left;">
+						<a href="http://www.dongqiudi.com/news/30114.html" target="_blank"><img src="images/133-140GH13245T4.jpg" alt="只要你留言，球衣天天送！"></a>
+						<h3><a href="http://www.dongqiudi.com/news/30114.html" target="_blank">只要你留言，球衣天天送！</a></h3>
+					</li>
+				</ul>
+				<ul class="js_switch_nav">
+					<li class="js_switch_trigger js_active">1</li>
+					<li class="js_switch_trigger">2</li>
+					<li class="js_switch_trigger">3</li>
+					<li class="js_switch_trigger">4</li>
+				</ul>
+			</div>
+			<script>
+				var focusSlide = new Switch.Slide("focusSlide",{
+					triggerType:"mouseenter",
+					effect:"scrollx",
+					duration: 500,
+					autoPlay: true
+				});
+			</script>
+		</div>
+	</div>
+	<div id="appPic">
+		<a href="#">
+			<img src="images/banner-1000.jpg">
+		</a>
+	</div>
+	<div id="lm1">
+		<div class="lm1Left">
+			<div class="lm1LTitle">
+				<span>
+					<i></i>专栏
+				</span>
+			</div>
+			<div class="lm1LContent">
+				<div class="lm1LCLeft">
+					<div class="lm1LCLTitle">
+						<span>新闻大爆炸</span>
+					</div>
+					<div class="lm1LCLContent">
+						<div class="picNews">
+							<a href="#">
+								<img src="images/134-140P221501T94.jpg">
+							</a>
+							<div class="cont">
+							<h5>
+								<a href="#">新闻大爆炸：不服你咬温格啊！</a>
+							</h5>
+							<span>德罗巴摔倒，你扶还是不扶？温格为什么不买巴神？</span>
+							</div>
+						</div>
+						<div class="divide">最新专栏</div>
+						<ul class="mostNews">
+							<li>
+								<div class="cont contS">
+									<h5>
+										<a href="#">足球地理英格兰篇：故老相传</a>
+									</h5>
+									<span>英格兰是现代足球的起源地，那么你了解英格兰的足球地理吗？</span>
+								</div>
+							</li>
+							<li>
+								<div class="cont contS">
+									<h5>
+										<a href="#">英格兰跌入深渊，英超该当何罪</a>
+									</h5>
+									<span>英格兰从世界杯铩羽而归，英超联赛必须为英格兰的失利买单。</span>
+								</div>
+							</li>
+							<li>
+								<div class="cont contS">
+									<h5>
+										<a href="#">枪手成土豪？并不是从今年开始</a>
+									</h5>
+									<span>新援接二连三加盟，阿森纳变了？豪购，其实并非从今年开始。</span>
+								</div>
+							</li>
+							<li>
+								<div class="cont contS">
+									<h5>
+										<a href="#">桑切斯客场成绩差，枪手需注意</a>
+									</h5>
+									<span>转会到阿森纳之后，桑切斯在英超的表现到底会咋样？</span>
+								</div>
+							</li>
+							<li>
+								<div class="cont contS">
+									<h5>
+										<a href="#">卖掉卢卡库，蓝军到底是对是错</a>
+									</h5>
+									<span>穆里尼奥放弃卢卡库肯定有他自己的道理，他知道自己在做什么。</span>
+								</div>
+							</li>
+							<li>
+								<div class="cont contS">
+									<h5>
+										<a href="#">卖掉卢卡库，蓝军到底是对是错</a>
+									</h5>
+									<span>穆里尼奥放弃卢卡库肯定有他自己的道理，他知道自己在做什么。</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="lm1LCRight">
+					<div class="lm1LCLTitle lm1LCLTitleR">
+						<span>关于最佳那些事</span>
+					</div>
+					<div class="picNews picNewsR">
+							<a href="#">
+								<img src="images/76-1406191533290-L.jpg">
+							</a>
+							<div class="cont contR">
+							<h5>
+								<a href="#">新闻大爆炸：不服你咬温格啊！</a>
+							</h5>
+							<span>德罗巴摔倒，你扶还是不扶？温格为什么不买巴神？</span>
+							</div>
+					</div>
+					<div class="lm1LCLTitle lm1LCLTitleR">
+						<span>文豪门的专栏</span>
+					</div>
+					<div class="picNews picNewsR">
+							<a href="#">
+								<img src="images/138-1406141I0120-L.jpg">
+							</a>
+							<div class="cont contR">
+							<h5>
+								<a href="#">新闻大爆炸：不服你咬温格啊！</a>
+							</h5>
+							<span>德罗巴摔倒，你扶还是不扶？温格为什么不买巴神？</span>
+							</div>
+					</div>
+					<div class="lm1LCLTitle lm1LCLTitleR">
+						<span>战术复盘当懂球帝</span>
+					</div>
+					<div class="picNews picNewsR">
+							<a href="#">
+								<img src="images/345-140H91P1340-L.jpg">
+							</a>
+							<div class="cont contR">
+							<h5>
+								<a href="#">新闻大爆炸：不服你咬温格啊！</a>
+							</h5>
+							<span>德罗巴摔倒，你扶还是不扶？温格为什么不买巴神？</span>
+							</div>
+					</div>
+					<div class="lm1LCLTitle lm1LCLTitleR">
+						<span>有涵养的访谈</span>
+					</div>
+					<div class="picNews picNewsR">
+							<a href="#">
+								<img src="images/73-140604105Z40-L.jpg">
+							</a>
+							<div class="cont contR">
+							<h5>
+								<a href="#">新闻大爆炸：不服你咬温格啊！</a>
+							</h5>
+							<span>德罗巴摔倒，你扶还是不扶？温格为什么不买巴神？</span>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lm1Right">
+			<div class="lm1RTitle">联赛积分榜</div>
+			<div class="lm1RContent">
+				<div class="scoreNav">
+					<span  class="liansaiHead" id="yingchaoHead" show="1">英超</span>
+					<span  class="liansaiHead" id="yijiaHead" show="0">意甲</span>
+					<span  class="liansaiHead" id="dejiaHead" show="0">德甲</span>
+					<span  id="xijiaHead" show="0">西甲</span>
+					<span  id="zhongchaoHead" show="0">中超</span>
+				</div>
+				<div class="scoreCon" >
+				<table class="standing-table" id="yingchao" style="display:table;" show="1">
+					<thead>
+						<tr>
+							<th class="t1">名次</th>
+							<th class="t2">球队</th>
+							<th class="t1">场次</th>
+							<th class="t1">积分</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>阿森纳</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>阿斯顿维拉</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>伯恩利</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>切尔西</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>水晶宫</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>埃弗顿</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>赫尔城</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>莱斯特城</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td>利物浦</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>曼城</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>曼联</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>纽卡斯尔</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>13</td>
+							<td>女王公园巡游者</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>14</td>
+							<td>南安普顿</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>15</td>
+							<td>斯托克城</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>16</td>
+							<td>桑德兰</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>17</td>
+							<td>斯旺西</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>18</td>
+							<td>热刺</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>19</td>
+							<td>西布朗</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>20</td>
+							<td>西汉姆联</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="standing-table" id="yijia" style="display:none;" show="0">
+					<thead>
+						<tr>
+							<th class="t1">名次</th>
+							<th class="t2">球队</th>
+							<th class="t1">场次</th>
+							<th class="t1">积分</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>尤文图斯</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>罗马</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>国际米兰</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>AC米兰</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>拉齐奥</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>都灵</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>赫尔城</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>莱斯特城</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td>利物浦</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>曼城</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>曼联</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>纽卡斯尔</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>13</td>
+							<td>女王公园巡游者</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>14</td>
+							<td>南安普顿</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>15</td>
+							<td>斯托克城</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>16</td>
+							<td>桑德兰</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>17</td>
+							<td>斯旺西</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>18</td>
+							<td>热刺</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>19</td>
+							<td>西布朗</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>20</td>
+							<td>西汉姆联</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+					</tbody>
+				</table>
+				</div>				
+			</div>
+		</div> 
+	</div>
+	<div id="lm2">
+		<div class="lm2Left">
+			<div class="leagueTitle">
+				<span>
+					<i></i>联赛
+				</span>
+			</div>
+			<div class="leagueContent">
+				<div class="minbox">
+					<div class="minboxHead">
+						<span>英超</span>
+						<a href="#" class="more">更多</a>
+					</div>
+					<div class="minboxBody">
+						<ul>
+							<h6>
+								<a href="#">重获自由！莫里森获得保释</a>
+							</h6>
+							<li>
+								<a href="#">教授：钱伯斯以后可以打中场</a>
+								<span>20:32</span>
+							</li>
+							<li>
+								<a href="#">迪尔：我想在热刺取得成功</a>
+								<span>20:32</span>
+							</li>
+							<li>
+								<a href="#">亨德森：对阵曼联，不改变踢法</a>
+								<span>20:32</span>
+							</li>
+							<li>
+								<a href="#">走定了？维尔马伦拒绝续约</a>
+								<span>20:32</span>
+							</li>
+							<li>
+								<a href="#">等巴萨付钱，利物浦好买拉维奇</a>
+								<span>20:32</span>
+							</li>
+							<li>
+								<a href="#">格拉汉姆：光签桑切斯还不够啊</a>
+								<span>20:32</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="minbox">
+					<div class="minboxHead">
+						<span>英超</span>
+						<a href="#" class="more">更多</a>
+					</div>
+					<div class="minboxBody">
+						<ul>
+							<h6>
+								<a href="#">重获自由！莫里森获得保释</a>
+							</h6>
+							<li>
+								<a href="#">教授：钱伯斯以后可以打中场</a>
+								<span>20:32</span>
+							</li>
+							<li>
+								<a href="#">迪尔：我想在热刺取得成功</a>
+								<span>20:32</span>
+							</li>
+							<li>
+								<a href="#">亨德森：对阵曼联，不改变踢法</a>
+								<span>20:32</span>
+							</li>
+							<li>
+								<a href="#">走定了？维尔马伦拒绝续约</a>
+								<span>20:32</span>
+							</li>
+							<li>
+								<a href="#">等巴萨付钱，利物浦好买拉维奇</a>
+								<span>20:32</span>
+							</li>
+							<li>
+								<a href="#">格拉汉姆：光签桑切斯还不够啊</a>
+								<span>20:32</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="minbox">
+					<div class="minboxHead">
+						<span>英超</span>
+						<a href="#" class="more">更多</a>
+					</div>
+					<div class="minboxBody">
+						<ul>
+							<h6>
+								<a href="#">重获自由！莫里森获得保释</a>
+							</h6>
+							<li>
+								<a href="#">教授：钱伯斯以后可以打中场</a>
+								<span>20:32</span>
+							</li>
+							<li>
+								<a href="#">迪尔：我想在热刺取得成功</a>
+								<span>20:32</span>
+							</li>
+							<li>
+								<a href="#">亨德森：对阵曼联，不改变踢法</a>
+								<span>20:32</span>
+							</li>
+							<li>
+								<a href="#">走定了？维尔马伦拒绝续约</a>
+								<span>20:32</span>
+							</li>
+							<li>
+								<a href="#">等巴萨付钱，利物浦好买拉维奇</a>
+								<span>20:32</span>
+							</li>
+							<li>
+								<a href="#">格拉汉姆：光签桑切斯还不够啊</a>
+								<span>20:32</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="minbox">
+					<div class="minboxHead">
+						<span>英超</span>
+						<a href="#" class="more">更多</a>
+					</div>
+					<div class="minboxBody">
+						<ul>
+							<h6>
+								<a href="#">重获自由！莫里森获得保释</a>
+							</h6>
+							<li>
+								<a href="#">教授：钱伯斯以后可以打中场</a>
+								<span>20:32</span>
+							</li>
+							<li>
+								<a href="#">迪尔：我想在热刺取得成功</a>
+								<span>20:32</span>
+							</li>
+							<li>
+								<a href="#">亨德森：对阵曼联，不改变踢法</a>
+								<span>20:32</span>
+							</li>
+							<li>
+								<a href="#">走定了？维尔马伦拒绝续约</a>
+								<span>20:32</span>
+							</li>
+							<li>
+								<a href="#">等巴萨付钱，利物浦好买拉维奇</a>
+								<span>20:32</span>
+							</li>
+							<li>
+								<a href="#">格拉汉姆：光签桑切斯还不够啊</a>
+								<span>20:32</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="videoTitle">
+				<span>
+					<i></i>视频
+				</span>
+			</div>
+			<div class="videoContent">
+				<div class="videoHead">
+					<a href="#" id="latest">最近更新</a>
+					<a href="#" id="weekly">一周最热</a>
+				</div>
+				<div class="videoBody">
+					<ul class="videoUL1">
+						<li>
+							<a href="#" class="pic">
+								<i></i>
+								<img src="images/_200PA33.jpg">
+							</a>
+							<a href="#" class="des">土豪恒大VS豪门拜仁，让我们期待奇迹</a>
+						</li>
+						<li>
+							<a href="#" class="pic">
+								<i></i>
+								<img src="images/_1R1423Y.jpg">
+							</a>
+							<a href="#" class="des">轻松一刻：小鸡冲入球场干扰比赛</a>
+						</li>
+						<li>
+							<a href="#" class="pic">
+								<i></i>
+								<img src="images/_1Q642323.jpg">
+							</a>
+							<a href="#" class="des">个性的张扬：莱万多夫斯基进攻集锦</a>
+						</li>
+						<li>
+							<a href="#" class="pic">
+								<i></i>
+								<img src="images/_1Q10TZ.jpg">
+							</a>
+							<a href="#" class="des">轻松一刻：拜仁球员玩三对三篮球</a>
+						</li>
+						<li>
+							<a href="#" class="pic">
+								<i></i>
+								<img src="images/_1HG2591.jpg">
+							</a>
+							<a href="#" class="des">欣赏是种美：中文版巴塞罗那队歌</a>
+						</li>
+						<li>
+							<a href="#" class="pic">
+								<i></i>
+								<img src="images/_1512093Z.jpg">
+							</a>
+							<a href="#" class="des">足球电影：Barefoot赤足追梦</a>
+						</li>
+						<li>
+							<a href="#" class="pic">
+								<i></i>
+								<img src="images/_15044A30.jpg">
+							</a>
+							<a href="#" class="des">教你做场上懂球帝：球场利器电梯球！</a>
+						</li>
+						<li>
+							<a href="#" class="pic">
+								<i></i>
+								<img src="images/_14594c27.jpg">
+							</a>
+							<a href="#" class="des">个性的张扬：C罗的个人博物馆</a>
+						</li>
+						<li>
+							<a href="#" class="pic">
+								<i></i>
+								<img src="images/_1454092Q.jpg">
+							</a>
+							<a href="#" class="des">欣赏是种美：温情阿贾克斯签下8岁患病男孩</a>
+						</li>
+						<li>
+							<a href="#" class="pic">
+								<i></i>
+								<img src="images/_131426261.jpg">
+							</a>
+							<a href="#" class="des">轻松一刻：尤文图斯温情圣诞祝福视频</a>
+						</li>
+					</ul>
+					<ul class="videoUL2" style="display:none;">
+						<li>
+							<a href="#" class="pic">
+								<i></i>
+								<img src="images/_160646264.jpg">
+							</a>
+							<a href="#" class="des">想当场上懂球帝？学学花哨足球技巧</a>
+						</li>
+						<li>
+							<a href="#" class="pic">
+								<i></i>
+								<img src="images/0240221E33.png">
+							</a>
+							<a href="#" class="des">教你做场上懂球帝：学学小罗的彩虹过人</a>
+						</li>
+						<li>
+							<a href="#" class="pic">
+								<i></i>
+								<img src="images/_122635500.jpg">
+							</a>
+							<a href="#" class="des">球门守护神！世界最佳门将布冯精彩扑救</a>
+						</li>
+						<li>
+							<a href="#" class="pic">
+								<i></i>
+								<img src="images/_1GTE05.jpg">
+							</a>
+							<a href="#" class="des">请你们不要再欺负美女裁判玛茜了好吗？</a>
+						</li>
+						<li>
+							<a href="#" class="pic">
+								<i></i>
+								<img src="images/_232251W2.jpg">
+							</a>
+							<a href="#" class="des">蓝黑队魂萨内蒂的爱心厨房</a>
+						</li>
+						<li>
+							<a href="#" class="pic">
+								<i></i>
+								<img src="images/1G0152Y951.jpg">
+							</a>
+							<a href="#" class="des">教你做场上懂球帝：华丽过人技巧大教学</a>
+						</li>
+						<li>
+							<a href="#" class="pic">
+								<i></i>
+								<img src="images/_161342A0.jpg">
+							</a>
+							<a href="#" class="des">最纯粹的足球，2013年世界球坛经典瞬间回顾</a>
+						</li>
+						<li>
+							<a href="#" class="pic">
+								<i></i>
+								<img src="images/_15044A30.jpg">
+							</a>
+							<a href="#" class="des">教你做场上懂球帝：球场利器电梯球！</a>
+						</li>
+						<li>
+							<a href="#" class="pic">
+								<i></i>
+								<img src="images/_1IT0249.jpg">
+							</a>
+							<a href="#" class="des">个性的张扬：金球候选C罗本赛季最强集锦</a>
+						</li>
+						<li>
+							<a href="#" class="pic">
+								<i></i>
+								<img src="images/_124201K7.jpg">
+							</a>
+							<a href="#" class="des">专访频道：张琳芃告诉你卡马乔差在哪</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="lm2Right">
+			<div class="playerTitle">
+				<span>
+					<i></i>球员
+				</span>
+			</div>
+			<div class="playerContent">
+				<div class="xiaoyaoHead">
+					<a href="#">小妖图鉴</a>
+				</div>
+				<div class="xiaoyaoBody">
+					<ul>
+						<li>
+							<a href="#" class="xiaoyaoPic">
+								<img src="images/350-140P21I2170-L.jpg">
+							</a>
+							<div class="contYao">
+								<h5>
+									<a href="#" class="title">维埃托：期待涅槃的黄潜妖人</a>
+								</h5>
+								<p>作为比利亚雷亚尔引进的新援，这位阿根廷妖人</p>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="xiaoyaoPic">
+								<img src="images/138-140P21312430-L.jpg">
+							</a>
+							<div class="contYao">
+								<h5>
+									<a href="#" class="title">维埃托：期待涅槃的黄潜妖人</a>
+								</h5>
+								<p>作为比利亚雷亚尔引进的新援，这位阿根廷妖人</p>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="xiaoyaoPic">
+								<img src="images/316-140P30612290-L.jpg">
+							</a>
+							<div class="contYao">
+								<h5>
+									<a href="#" class="title">维埃托：期待涅槃的黄潜妖人</a>
+								</h5>
+								<p>作为比利亚雷亚尔引进的新援，这位阿根廷妖人</p>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="xiaoyaoPic">
+								<img src="images/73-140P21256180-L.jpg">
+							</a>
+							<div class="contYao">
+								<h5>
+									<a href="#" class="title">维埃托：期待涅槃的黄潜妖人</a>
+								</h5>
+								<p>作为比利亚雷亚尔引进的新援，这位阿根廷妖人</p>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="xiaoyaoPic">
+								<img src="images/350-140P21I2170-L.jpg">
+							</a>
+							<div class="contYao">
+								<h5>
+									<a href="#" class="title">维埃托：期待涅槃的黄潜妖人</a>
+								</h5>
+								<p>作为比利亚雷亚尔引进的新援，这位阿根廷妖人</p>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="xiaoyaoPic">
+								<img src="images/138-140P20Z9270-L.jpg">
+							</a>
+							<div class="contYao">
+								<h5>
+									<a href="#" class="title">维埃托：期待涅槃的黄潜妖人</a>
+								</h5>
+								<p>作为比利亚雷亚尔引进的新援，这位阿根廷妖人</p>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="xiaoyaoPic">
+								<img src="images/135-140P11J204620.jpg">
+							</a>
+							<div class="contYao">
+								<h5>
+									<a href="#" class="title">维埃托：期待涅槃的黄潜妖人</a>
+								</h5>
+								<p>作为比利亚雷亚尔引进的新援，这位阿根廷妖人</p>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="xiaoyaoPic">
+								<img src="images/350-140P21I2170-L.jpg">
+							</a>
+							<div class="contYao">
+								<h5>
+									<a href="#" class="title">维埃托：期待涅槃的黄潜妖人</a>
+								</h5>
+								<p>作为比利亚雷亚尔引进的新援，这位阿根廷妖人</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer"></div>
+</body>
+</html>
