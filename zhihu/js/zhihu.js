@@ -1,12 +1,9 @@
 $(function(){
 	$(".rep").mouseover(function(){
-		addC();
-		var selector =$(this);
-		alert($this);
-		//timer=setTimeout("addC("+ obj+")",1000);
-		$(".story").hide();
 		var pid= $(this).attr("picID");
-		$(".story[picID="+pid+"]").show();
+		//addC(pid);
+		timer=setTimeout("addC("+pid+")",500);
+		
 	});
 	$(".rep").mouseout(function(){
 		clearTimeout(timer);
@@ -14,7 +11,11 @@ $(function(){
 
 })
 var timer;
-function addC() {
+function addC(pid) {
 	$(".rep").removeClass("cur");
-	$("this").addClass("cur");
+	$(".rep[picID="+pid+"]").addClass("cur");
+	$(".story").fadeOut();
+	$(".story[picID="+pid+"]").fadeIn();
+	var t = 21+72*Math.floor((pid-1)/3);
+	$(".arrow").css("top",t+"px");
 }
