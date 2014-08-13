@@ -1,0 +1,31 @@
+*{margin: 0;padding: 0;}
+body{width: 100%;height: 100%;list-style: none;font-family: 'Lato', serif;font-size: 13px;}
+img{border:0;}
+a{text-decoration: none;}
+li{list-style: none;}
+input:focus{outline: none;}
+input{border:0;text-indent: 10px;}
+html { overflow-x: hidden; overflow-y: hidden; }
+
+/*主要框架*/
+.mainSlider{width: 100%;height: 100%;position: fixed;background-image: url("../images/main-back-1.jpg");z-index: 2;}
+.header{height: 124px;width: 100%;z-index: 3;}
+.headInner{position: relative;z-index: 21;height: 100%;background-color: rgba(0,0,0,0.8);}
+.nav{position: absolute;background-color: rgba(0,0,0,0.8);top: 124px;bottom: 0;width: 270px;height: 100%;z-index: 3;padding: 60px 15px 0 15px;}
+.footer{position: fixed;z-index: 19;bottom: 0;left: 300px;width: 100%;border-top: 1px solid rgba(255, 255, 255, 0.1);height: 83px;background-color: rgba(0,0,0,0.8);}
+
+/*头部*/
+.logo{padding-top: 25px;display: block;width: 203px;height: 58px;float: left;}
+.logo img{width: 203px;height: 83px;}
+.picList{width: 644px;height: 83px;float: left;margin-left: 180px;margin-top: 20px;}
+.picInner{margin: 0 40px;height: 100%;width: 564px;overflow: hidden;}
+.picUL{height: 100%;width: 2000px;}
+.picLi{float: left;height: 100%;width: 82px;padding: 0 6px;}
+.picLi img{width: 82px;height: 83px;}
+.searchBox{width: 282px;height: 44px;float: right;margin:35px 15px;}
+.btn{float: right; cursor: pointer;width: 44px;height: 44px;background-color: #e0191a;background-image: url("../css/images/search-icon.png");}
+.searchBox input{width: 238px;height: 44px;float: left;background-color: #000;color: #fff;}
+.navUL{width: 100%;}
+.navList{height: 50px;width: 100%;border-bottom: 1px solid #aaa;line-height: 50px;}
+.navA{display:block; font-size: 16px;font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;color: #fff;}
+.cur{padding-left: 15px;color: #e0191a;}
