@@ -1,0 +1,67 @@
+*{margin: 0;padding: 0;}
+body{width: 100%;height: 100%;font-size: 14px;text-align: center;font-family:微软雅黑, 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+img{border 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+/*框架*/
+.wrap{width: 1000px;height: 100%;margin: 0 auto;}
+.wrapLeft{width: 280px;height: 100%;float: left;}
+.wrapRight{width: 700px;height: 100%;float: left;margin-left: 20px;}
+.pannel{position: relative;top: 12%;height: 80%;border-radius: 7px;box-shadow: 2px 2px 6px rgba(0,0,0,0.7)}
+.pannelLeft{width: 280px;background-color: #fff;}
+.pannelChat{width: 700px;overflow: hidden;position: relative;}
+
+/*背景图片*/
+
+.bgImg img {width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
+
+/*左侧窗体*/
+.panHd{width: 100%;height: 45px;color: #fff;border-radius: 6px 6px 0 0;font-size: 18px;background:linear-gradient(#555,#222);line-height: 45px;}
+.searchBtn{box-shadow: inset 1px 0 rgba(255,255,255,.1),0 1px rgba(255,255,255,.1); cursor: pointer; float: right;width:25px;height: 19px;padding: 6px 10px;margin: 5px 7px 0 0;border-radius: 3px;border:1px solid #000;}
+.hdTxt{width: 105px;height: 18px;padding: 13px 30px 13px 0;float: right;line-height: 18px;}
+.searchPic{width: 14px;height: 14px;margin: 0 4px;background-image: url("../css/images/title_search_icon.png");display: block;background-size: 100% 100%;}
+.panBd{position: absolute;top: 45px;left: 0px;width: 100%;}
+.panBTitle{width: 100%;height:39px;}
+.ttUL{width: 100%;height: 100%;}
+.ttList{cursor: pointer; width: 69px;height:16px; float: left;border-bottom: 2px solid #ccc;padding: 10px 12px;font-size: 16px;line-height: 16px;box-shadow: 10px 0 0 -9px #ccc;}
+.cur{border-bottom: 2px solid #0aa7ff; color: #0aa7ff;}
+.panBContent{width: 100%;height: 360px;overflow: scroll;}
+.cList{width: 100%;height: 38px;border-bottom: 1px solid #ccc;cursor: pointer;background: url("../css/images/open_arrow.png") no-repeat 12px;background-size: 14px 14px;}
+.ccUL{width: 100%;}
+.ccList{height: 56px;border-bottom: 1px solid #ccc;cursor: pointer;background-color: #e7f1f8;}
+.ccList img{width: 40px;height: 40px;}
+.frPic{width: 40px;height: 40px;float: left;margin: 8px 8px;}
+.frNick{height: 22px;line-height: 23px;overflow: hidden;padding: 6px 0 0 5px;text-align: left;font-size: 16px;}
+.frNick span{color: #aaa;line-height: 17px;font-size: 12px;}
+.frMsg{overflow: hidden;font-size: 12px;color: #aaa;line-height: 28px;padding-left: 5px;text-align: left;}
+
+.fl{float: left;padding: 7px 27px;font-size: 16px;}
+.fr{float: right;padding: 7px 10px;font-size: 12px;color:#bbb;}
+.panFt{width: 100%;height: 50px;position: absolute;bottom: 0;left: 0;background: linear-gradient(#555,#222);border-radius: 0 0 6px 6px; }
+.ftList{float: left; height: 100%;position: relative;border-right: 1px solid #222;border-left: 1px solid #555;color: #ccc;font-size: 14px;text-align: center;text-shadow: 0 -1px 0 #000;}
+.ftList a{display: inline-block;height: 100%;}
+.session{border-left: 0;width: 68px;}
+.contact{width: 70px;}
+.plugin{width: 68px;}
+.setting{width: 68px;border-right: 0;}
+.selected{color: #fff; background: #333;border-left-color: #222;color: #fff;text-shadow: 0 1px 0 #000;box-shadow: inset 0 0 10px #111;}
+.session .icon{background-image: url("../css/images/tab_icon_conversation.png");}
+.selected.session .icon{background-image: url("../css/images/tab_icon_conversation_selected.png");}
+.contact .icon{background-image: url("../css/images/tab_icon_contact.png");}
+.selected.contact .icon{background-image: url("../css/images/tab_icon_contact_selected.png");}
+.plugin .icon{background-image: url("../css/images/tab_icon_plugin.png");}
+.selected.plugin .icon{background-image: url("../css/images/tab_icon_plugin_selected.png");}
+.setting .icon{background-image: url("../css/images/tab_icon_setup.png");}
+.selected.setting .icon{background-image: url("../css/images/tab_icon_setup_selected.png");}
+.icon{width: 34px;height: 34px;background-size: 100% 100%;display: inline-block;}
+.iconTxt{display: block;color: #ccc;font-size: 12px;}
+
+/*聊天区*/
+.chatHd{width: 100%;border-radius: 6px 6px 0 0;height: 45px;background:linear-gradient(#555,#222);}
+.chatBd{width: 100%;min-height: 100%;background: rgba(0,0,0,0.5);}
+.chatFt{width: 100%;height: 50px;position: absolute;left: 0;bottom: 0;background: linear-gradient(#555,#222);}
+.more{width: 50px;height: 19px;padding: 6px 10px;margin: 5px 0 0 15px;border: 1px solid #2c2727;float: left;border-radius: 5px;}
+.more span{width: 14px;height: 14px;display: block;margin: 0 4px;background-image: url("../css/images/pannel-arrow-down.png");background-size: 100% 100%;}
+.name{float: left;width: 420px;height: 18px;padding: 13px 0 13px 15px;line-height: 18px;font-size: 18px;color: #fff;text-align: center;}
+.close,.min{cursor: pointer; float: right;width: 53px;height: 19px;padding: 6px 10px;margin: 5px 10px 0 0;border:1px solid #2c2727;border-radius: 5px;color: #fff;font-size: 15px;line-height: 19px;text-align: center;}
