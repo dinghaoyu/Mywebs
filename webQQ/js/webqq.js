@@ -1,7 +1,12 @@
 $(function(){
+	/*底部选项卡*/
 	$(".ftList ").click(function(){
+		var pid =$(this).attr("panID");
 		$(".ftList").removeClass("selected");
 		$(this).addClass("selected");
+		$(".panBd").hide();
+		$(".panBd[panID="+pid+"]").show();
+
 	});
 
 	$(".ttList").click(function(){
@@ -104,6 +109,7 @@ $(function(){
 		$(this).parent().remove();
 		$(".chatBd[chatID="+cid+"]").remove();
 		$(".ccList[chatID="+cid+"]").attr("show","0");
+		return false;
 	});
 	
 })
