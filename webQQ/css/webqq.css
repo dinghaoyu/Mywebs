@@ -3,6 +3,8 @@ body{width: 100%;height: 100%;font-size: 14px;text-align: center;font-family:微
 img{border 0;}
 li{list-style: none;}
 a{text-decoration: none;}
+input{border:0;}
+input:focus{outline: none;}
 
 /*框架*/
 .wrap{width: 1000px;height: 100%;margin: 0 auto;}
@@ -26,26 +28,27 @@ a{text-decoration: none;}
 .ttUL{width: 100%;height: 100%;}
 .ttList{cursor: pointer; width: 69px;height:16px; float: left;border-bottom: 2px solid #ccc;padding: 10px 12px;font-size: 16px;line-height: 16px;box-shadow: 10px 0 0 -9px #ccc;}
 .cur{border-bottom: 2px solid #0aa7ff; color: #0aa7ff;}
-.panBContent{width: 100%;height: 360px;overflow: scroll;}
+.panBContent{width: 100%;height: 360px;overflow: auto;}
 .cList{width: 100%;height: 38px;border-bottom: 1px solid #ccc;cursor: pointer;background: url("../css/images/open_arrow.png") no-repeat 12px;background-size: 14px 14px;}
 .ccUL{width: 100%;}
 .ccList{height: 56px;border-bottom: 1px solid #ccc;cursor: pointer;background-color: #e7f1f8;}
 .ccList img{width: 40px;height: 40px;}
 .frPic{width: 40px;height: 40px;float: left;margin: 8px 8px;}
 .frNick{height: 22px;line-height: 23px;overflow: hidden;padding: 6px 0 0 5px;text-align: left;font-size: 16px;}
-.frNick span{color: #aaa;line-height: 17px;font-size: 12px;}
+.frSign{color: #aaa;line-height: 17px;font-size: 12px;}
+.frName{font-size: 17px;color: #000;}
 .frMsg{overflow: hidden;font-size: 12px;color: #aaa;line-height: 28px;padding-left: 5px;text-align: left;}
 
 .fl{float: left;padding: 7px 27px;font-size: 16px;}
 .fr{float: right;padding: 7px 10px;font-size: 12px;color:#bbb;}
-.panFt{width: 100%;height: 50px;position: absolute;bottom: 0;left: 0;background: linear-gradient(#555,#222);border-radius: 0 0 6px 6px; }
+.panFt{width: 100%;height: 50px;position: absolute;bottom: 0;left: 0;background: linear-gradient(#555,#222);border-radius: 0 0 6px 6px;overflow: hidden;}
 .ftList{float: left; height: 100%;position: relative;border-right: 1px solid #222;border-left: 1px solid #555;color: #ccc;font-size: 14px;text-align: center;text-shadow: 0 -1px 0 #000;}
 .ftList a{display: inline-block;height: 100%;}
 .session{border-left: 0;width: 68px;}
 .contact{width: 70px;}
 .plugin{width: 68px;}
 .setting{width: 68px;border-right: 0;}
-.selected{color: #fff; background: #333;border-left-color: #222;color: #fff;text-shadow: 0 1px 0 #000;box-shadow: inset 0 0 10px #111;}
+.selected{ color: #fff; background: #333;border-left-color: #222;color: #fff;text-shadow: 0 1px 0 #000;box-shadow: inset 0 0 10px #111;}
 .session .icon{background-image: url("../css/images/tab_icon_conversation.png");}
 .selected.session .icon{background-image: url("../css/images/tab_icon_conversation_selected.png");}
 .contact .icon{background-image: url("../css/images/tab_icon_contact.png");}
@@ -59,9 +62,24 @@ a{text-decoration: none;}
 
 /*聊天区*/
 .chatHd{width: 100%;border-radius: 6px 6px 0 0;height: 45px;background:linear-gradient(#555,#222);}
-.chatBd{width: 100%;min-height: 100%;background: rgba(0,0,0,0.5);}
+.chatBd{overflow: auto; width: 100%;height:400px; background: rgba(0,0,0,0.5);position: absolute;top: 45px;left: 0;}
 .chatFt{width: 100%;height: 50px;position: absolute;left: 0;bottom: 0;background: linear-gradient(#555,#222);}
-.more{width: 50px;height: 19px;padding: 6px 10px;margin: 5px 0 0 15px;border: 1px solid #2c2727;float: left;border-radius: 5px;}
+.more{cursor: pointer; width: 50px;height: 19px;padding: 6px 10px;margin: 5px 0 0 15px;border: 1px solid #2c2727;float: left;border-radius: 5px;}
+.shut{display: block; background-image: url("../css/images/close--delete--remove-button_318-9073");background-size: 100% 100%;width: 15px;height: 15px;}
+
 .more span{width: 14px;height: 14px;display: block;margin: 0 4px;background-image: url("../css/images/pannel-arrow-down.png");background-size: 100% 100%;}
-.name{float: left;width: 420px;height: 18px;padding: 13px 0 13px 15px;line-height: 18px;font-size: 18px;color: #fff;text-align: center;}
+.nameS{opacity: 0.7; float: left;height: 20px;border-radius: 5px;border: 1px solid #2c2727;margin: 5px 0 0 5px;font-size: 15px;padding: 5px 5px;background: -webkit-linear-gradient(top,#5f9cc5,#396b9e);cursor: pointer;}
+.curName{opacity: 1;}
+.name{overflow: auto; float: left;width: 435px;height: 44px;line-height: 18px;font-size: 18px;color: #fff;text-align: center;}
 .close,.min{cursor: pointer; float: right;width: 53px;height: 19px;padding: 6px 10px;margin: 5px 10px 0 0;border:1px solid #2c2727;border-radius: 5px;color: #fff;font-size: 15px;line-height: 19px;text-align: center;}
+.addface{cursor: pointer; width: 30px;height: 30px;float: left;margin: 10px 0 0 15px;}
+.addface img{width: 30px;height: 30px;}
+.addTxt{float: left;width: 550px;height: 32px;padding: 5px 10px;margin: 8px 15px;border-radius: 5px;}
+.sendBtn{width: 28px;height: 24px;padding: 6px 10px;border:1px solid #044062;border-radius: 5px;float: right;margin: 5px 12px 0 0;background: -webkit-linear-gradient(top,#5f9cc5,#396b9e);color: #fff;cursor: pointer;}
+.self{width: 680px;height: 66px;padding: 10px 10px;}
+.self img{width: 40px;height: 40px;float: right;border-radius: 50%;margin-left: 10px;}
+.chatNick{text-align: right;text-shadow:1px 1px 1px #fff;margin-bottom: 10px;}
+.chatContent{display: inline-block;min-height: 16px;max-width: 50%;line-height: 1.4;border-radius: 5px;background-color: #fff;box-shadow: 1px 1px 5px #000;padding: 10px 15px;text-align: left;float: right;}
+.closeicon,.nameS img{width: 10px;height: 10px;float: right;color: #000;}
+
+.naTxt{float: right;margin: 0 10px;}

@@ -3,6 +3,7 @@
 	<title>webQQ</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/webqq.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.js"></script>
 	<script type="text/javascript" src="js/webqq.js"></script>
@@ -23,12 +24,12 @@
 				<div class="panBd">
 					<div class="panBTitle">
 						<ul class="ttUL">
-							<li class="ttList cur">好友</li>
-							<li class="ttList">群</li>
-							<li class="ttList">讨论组</li>
+							<li class="ttList cur" cID="1">好友</li>
+							<li class="ttList" cID="2">群</li>
+							<li class="ttList" cID="3">讨论组</li>
 						</ul>
 					</div>
-					<div class="panBContent">
+					<div class="panBContent" cID="1">
 						<ul class="cUL">
 							<li class="cList" frID="1" show="0">
 								<span class="fl">我的好友</span>
@@ -36,60 +37,65 @@
 								
 							</li>
 							<ul class="ccUL frdUL" frID="1" style="display:none;" >
-									<li class="ccList frdList">
+									<li class="ccList frdList" chatID="1" show="0">
 										<a href="#" class="frPic">
 											<img src="images/getface.jpg">
 										</a>
-										<p class="frNick">陈仔
-											<span>(用裙子遮脸)</span>
+										<p class="frNick">
+											<span class="frName">陈仔</span>
+											<span class="frSign">(用裙子遮脸)</span>
 										</p>
 										<p class="frMsg">
 											<span>[在线]</span>
 											<span>值钱比有钱更重要</span>
 										</p>
 									</li>
-									<li class="ccList frdList">
+									<li class="ccList frdList" chatID="2" show="0">
 										<a href="#" class="frPic">
 											<img src="images/getface.jpg">
 										</a>
-										<p class="frNick">陈仔
-											<span>(用裙子遮脸)</span>
+										<p class="frNick">
+											<span class="frName">樊军</span>
+											<span class="frSign">(用裙子遮脸)</span>
 										</p>
 										<p class="frMsg">
 											<span>[在线]</span>
 											<span>值钱比有钱更重要</span>
 										</p>
 									</li>
-									<li class="ccList frdList">
+									<li class="ccList frdList" chatID="3" show="0">
 										<a href="#" class="frPic">
 											<img src="images/getface.jpg">
 										</a>
-										<p class="frNick">陈仔
-											<span>(用裙子遮脸)</span>
+										<p class="frNick">
+											<span class="frName">朱威</span>
+											<span class="frSign">(用裙子遮脸)</span>
 										</p>
 										<p class="frMsg">
 											<span>[在线]</span>
 											<span>值钱比有钱更重要</span>
 										</p>
 									</li>
-									<li class="ccList frdList">
+									<li class="ccList frdList" chatID="4" show="0">
 										<a href="#" class="frPic">
 											<img src="images/getface.jpg">
 										</a>
-										<p class="frNick">陈仔
-											<span>(用裙子遮脸)</span>
+										<p class="frNick">
+											<span class="frName">李维嘉</span>
+											<span class="frSign">(用裙子遮脸)</span>
 										</p>
 										<p class="frMsg">
 											<span>[在线]</span>
 											<span>值钱比有钱更重要</span>
 										</p>
 									</li>
-									<li class="ccList frdList">
+									<li class="ccList frdList" chatID="5" show="0">
 										<a href="#" class="frPic">
 											<img src="images/getface.jpg">
 										</a>
-										<p class="frNick">陈仔
-											<span>(用裙子遮脸)</span>
+										<p class="frNick">
+											<span class="frName">彭毅</span>
+											<span class="frSign">(用裙子遮脸)</span>
 										</p>
 										<p class="frMsg">
 											<span>[在线]</span>
@@ -233,6 +239,56 @@
 							</ul>
 						</ul>
 					</div>
+					<div class="panBContent" cID="2" style="display:none">
+						<ul class="ccUL frdUL">
+									<li class="ccList frdList">
+										<a href="#" class="frPic">
+											<img src="images/getface1.jpg">
+										</a>
+										<p class="frNick">淮师足球爱好者
+										</p>										
+									</li>
+									<li class="ccList frdList">
+										<a href="#" class="frPic">
+											<img src="images/getface1.jpg">
+										</a>
+										<p class="frNick">1103淮师计科
+										</p>										
+									</li>
+									<li class="ccList frdList">
+										<a href="#" class="frPic">
+											<img src="images/getface1.jpg">
+										</a>
+										<p class="frNick">1103淮师计科
+										</p>										
+									</li>
+									<li class="ccList frdList">
+										<a href="#" class="frPic">
+											<img src="images/getface1.jpg">
+										</a>
+										<p class="frNick">1103淮师计科	
+										</p>										
+									</li>
+									<li class="ccList frdList">
+										<a href="#" class="frPic">
+											<img src="images/getface1.jpg">
+										</a>
+										<p class="frNick">1103淮师计科
+										</p>										
+									</li>
+							</ul>
+					</div>
+					<div class="panBContent" cID="3" style="display:none">
+						<ul class="ccUL frdUL">
+							<li class="ccList frdList">
+								<a href="#" class="frPic">
+											<img src="images/discu_avatar.png">
+								</a>
+								<p class="frNick">权、觉思清晨、LHX、梅小跳、小王
+								</p>										
+							</li>
+						</ul>
+					</div>
 				</div>
 				<div class="panFt">
 					<ul>
@@ -270,12 +326,32 @@
 					<div class="more">
 						<span></span>
 					</div>
-					<div class="name">红白う北伦敦</div>
+					<div class="name">
+						<!-- <div class="nameS">
+							<i class="fa fa-times closeicon"></i>
+							<img src="css/images/close.png">
+							<span class="naTxt">梅小跳</span>
+						</div> -->
+					</div>
 					<div class="close">关闭</div>
 					<div class="min">最小化</div>
 				</div>
-				<div class="chatBd"></div>
-				<div class="chatFt"></div>
+				<!-- <div class="chatBd chat1">
+					<div class="self">
+						<img src="images/g.jpg">
+						<p class="chatNick">梅小跳</p>
+						<p class="chatContent">好的，88</p>
+					</div>
+				</div> -->
+				<div class="chatFt">
+					<span href="#" class="addface">
+						<img src="css/images/chat_bottombar_icon_face.png">
+					</span>
+					<input class="addTxt" chatID="1">
+					<div class="sendBtn" chatID="1">
+						<span>发送</span>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
