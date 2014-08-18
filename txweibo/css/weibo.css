@@ -1,0 +1,68 @@
+*{margin: 0;padding: 0;}
+body{background: url("../images/2014_worldCup.jpg") center 0 no-repeat;font:12px/1.75 Tahoma,Arial,sans-serif;}
+li{list-style: none;}
+a{text-decoration: none;color: #c9c9c9;}
+a:hover{text-decoration: none;}
+input{outline: none;border:0;}
+textarea{outline: none;border:0;}
+.clear:after{content: '.';clear: both;display: block;height: 0;visibility: hidden;font-size: 0;line-height: 0;}
+/*主体结构*/
+.nav{width: 100%;min-width: 1000px;height: 35px;background-color: rgba(0,0,0,0.8);position: fixed;z-index: 2;}
+.main{width: 960px;min-height: 900px; position: relative;top: 235px;left: 195px;z-index: 1;background-color:#e8f4e4;}
+
+
+/*导航栏*/
+.navInner{width: 960px;height: 35px;margin: 0 auto;}
+.txLogo{float: left;width: 120px;height: 35px;display: block;background-image: url("../css/images/logo_20131126.png");background-repeat: no-repeat;}
+.navLeft{height: 35px;float: left;padding-left: 15px;}
+.nlList{float: left;line-height: 35px;padding: 0 10px;font-size: 14px;}
+.cur{background-color: #000;}
+.cur a{color: #fff;}
+.sou{float: right;width: 162px;height: 23px;border-radius: 3px;background-color: #fff;margin: 5px;overflow: hidden;}
+.souBtn{float: right;width: 23px;height: 23px;cursor: pointer;background-image: url("../css/images/head_search_20120517.png");}
+.sou input{width: 122px;height: 23px;padding-left: 7px;}
+.souDrop{float: right;width: 11px;height: 11px;margin-top: 6px; display: block;background-image: url("../css/images/b1_20140716.png");background-position: -300px -173px;opacity: 0.6;}
+.navRight{float: right;height: 35px;}
+.nrList{float: left;height: 35px;width: 36px;line-height: 30px;}
+.navIcon{width: 20px;height: 20px;display: block;margin: 7px 0 0 8px;}
+.tiIcon{background:url("../css/images/icons_20130704.png") no-repeat;}
+.msgIcon{background:url("../css/images/icons_20130704.png") -20px 0 no-repeat;}
+.tingzhongIcon{background:url("../css/images/icons_20130704.png") -40px 0 no-repeat;}
+.tongzhiIcon{background:url("../css/images/icons_20130704.png") -60px -20px no-repeat;}
+.nrS{padding: 0 5px;}
+
+/*主体部分*/
+.mainLeft{float: left;width: 640px;min-height: 900px;background-color: #fff;}
+.talkBox{width: 580px;height: 150px;padding: 0 30px 10px 30px;background-image: url("../css/images/talkbox.jpg");}
+.tbTitle{width: 570px;height: 30px;padding: 10px 5px 0 5px;color: #405916;font-family: 微软雅黑;}
+.talkS{font-size: 16px;}
+.talkA{float: right;color: #405916;font-size: 12px;font-family: Simsun;}
+.talkA:hover{text-decoration: underline;}
+.tbContent{border-radius: 3px;width: 578px;height: 68px;border:1px solid #d0d0d0;background-color: #fff;}
+.talkArea{width: 97.9%;padding: 3px 1%;}
+.tbFoot{width: 580px;height: 30px;padding: 6px 0 4px 0;}
+.sendList{min-width: 45px;height: 21px;margin: 3px 6px 0 4px;float: left;}
+.sico{width: 16px;height: 16px;float: left;margin: 3px 4px 0 0;background-image: url("../css/images/b1_20140716.png"); }
+.icoface{background-position: -120px -33px;}
+.icopic{background-position: 0 -33px;}
+.icofrd{background-position: -144px -33px;}
+.icoxin{background-position: -168px -53px;}
+.icoxian{background-position: -272px -184px;}
+.icovote{background-position: -225px -201px}
+.sendList a{color: #56604a;}
+.fen{float: left;color: #fff;line-height: 24px;font-size: 15px;}
+.sendFun{float: right;width: 150px;height: 30px;}
+.sendBtn{float: right;width: 85px;height: 27px;background-image: url("../css/images/b1_20140716.png");cursor: pointer;}
+.qzone{float: right;width: 16px;height: 16px;background-position: -96px -53px;background-image: url("../css/images/b1_20140716.png");margin: 5px 5px 0 0;}
+.sfTxt{float: right;color: #56604a;padding: 3px 10px 0 0;}
+.mainContent{width: 640px;min-height: 500px;margin-top: 10px;}
+.talklistTab{width: 580px;height: 30px;margin: 0 30px;border-bottom: 1px solid #e4e4e4;}
+.tbList{float: left;padding: 0 10px;line-height: 30px;}
+.tbList a{color: #666;}
+.tbcur{border-bottom: 3px solid #229bd7;}
+.tbcur a{color: #000;font-weight: bold;}
+.talklistBody{width: 580px;padding: 10px 30px 0 30px;min-height: 300px;}
+.tlbList{width: 100%;padding: 16px 0 18px;border-bottom: 1px dotted #d8d8d8;}
+.userPic{float: left;width: 50px;height: 50px;padding: 4px 15px 4px 0;}
+.userPic img{width: 50px;height: 50px;border-radius: 50%;}
+.msgBox{width: 515px;}
