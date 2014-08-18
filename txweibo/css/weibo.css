@@ -1,8 +1,8 @@
 *{margin: 0;padding: 0;}
-body{background: url("../images/2014_worldCup.jpg") center 0 no-repeat;font:12px/1.75 Tahoma,Arial,sans-serif;}
+body{background: url("../images/2014_worldCup.jpg") center 0 no-repeat;font:12px/1.75 Tahoma,Arial,sans-serif;background-color: #3d5e0f;}
 li{list-style: none;}
 a{text-decoration: none;color: #c9c9c9;}
-a:hover{text-decoration: none;}
+a:hover{text-decoration: underline;}
 input{outline: none;border:0;}
 textarea{outline: none;border:0;}
 .clear:after{content: '.';clear: both;display: block;height: 0;visibility: hidden;font-size: 0;line-height: 0;}
@@ -65,4 +65,44 @@ textarea{outline: none;border:0;}
 .tlbList{width: 100%;padding: 16px 0 18px;border-bottom: 1px dotted #d8d8d8;}
 .userPic{float: left;width: 50px;height: 50px;padding: 4px 15px 4px 0;}
 .userPic img{width: 50px;height: 50px;border-radius: 50%;}
-.msgBox{width: 515px;}
+.msgBox{width: 515px;float: right;}
+.userName{width: 100%;height: 23px;line-height: 23px;font-size: 14px;color: #999;}
+.nameTxt{color: #006a92;font-weight: bold;float: left;}
+.nameIcon{float: left;width: 15px;height: 16px;background: url("../css/images/b1_20140716.png") -36px -126px;margin: 3px 0 0 3px;}
+.msgCnt{width: 100%;font-size: 14px;}
+.msgCnt a{color: #006a92;}
+.media{width: 100%;padding-top: 10px;}
+.pubInfo{width: 100%;height: 19px;margin-top: 10px;}
+.pubLeft{float: left;color: #999;height: 19px;line-height: 19px;}
+.weiboIcon{float: left;width: 16px;height: 16px;background:url("../css/images/b1_20140716.png") -210px -111px;}
+.pubTime{color: #759aad;}
+.zhuanCount{color:#006a92;}
+.pubRight{float: right;height: 19px;line-height: 19px;}
+.pubRight a{color:#006a92}
+.pubRight span{margin: 0 8px 0 7px;color: #dbdbdb;}
+.zanIcon{float: left;width: 16px;height: 16px;background: url("../css/images/b1_20140716.png") -290px -112px;cursor: pointer;}
+.mediaA{cursor: url("http://mat1.gtimg.com/www/mb/images/cursor_zoom.cur"),pointer;}
+
+/*右侧*/
+.mainRight{float: right;width: 319px;min-height: 500px;}
+.myMsg{background-image: url("../css/images/msg1.png");width: 304px;height: 100px;padding: 10px 0 0 15px;}
+.myPic{width: 75px;height: 75px;float: left;}
+.myPic img{width: 75px;height: 75px;border-radius: 50%;border:3px solid #4d6928;}
+.myInfo{float: left;padding: 5px 0 0 15px;width:200px;height:90px;}
+.myName{width: 100%;height: 19px;line-height: 19px;font-size: 14px;}
+.mnTxt{color:#fbea0b;font-family: Tahoma;float: left;}
+.levelIcon{width: 37px;height: 16px;float: left;margin-left: 5px;background:url("../css/images/b1_20140716.png") -54px -126px;}
+.myInfoS{color:#C9E4B4;margin-top: 5px;display: block;}
+.infoFoot{margin-top: 3px;width: 100%;}
+.infoFoot a{color: #fbea0b;margin-right: 10px;}
+.c2{height: 51px;padding-left: 25px;background-color: #d9e8d4;}
+.c2List{height: 49px;float: left;min-width: 58px;border-right: 1px dotted #d8d8d8;}
+.stat{height: 45px;position: relative;z-index: 5;display: inline-block;text-align: left;}
+.statshu{display: block;font-size: 16px;color: #375a56;}
+.statg{font-size: 12px;display: block;color: #375a56;}
+.sts{margin: 0 25px 0 28px;}
+.voteBox{width: 260px;height: 373px;padding: 10px 0 5px 15px;border:1px dotted #d8d8d8;margin: 10px 21px 0 21px;}
+.voteBox a{color:#2B4A78}
+.picBox{margin-top: 10px;}
+.picBoxA{width: 112px;height: 108px;float: left;display: block;margin: 0 15px 15px 0;}
+.picBoxA img{width: 112px;height: 108px;}
