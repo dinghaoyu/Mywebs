@@ -1,0 +1,82 @@
+*{padding: 0;margin: 0;}
+body{width: 100%;height: 100%;font-family: "Helvetica Neue","Hiragino Sans GB","Microsoft Yahei",Helvetica,Arial,sans-serif;}
+li{list-style: none;}
+input{border:0;}
+input:focus{outline: none;}
+html { overflow-y: hidden; }
+a{text-decoration: none;}
+.clear:after{content: '.';clear: both;display: block;height: 0;visibility: hidden;font-size: 0;line-height: 0;}
+/*主体结构*/
+.blur{width: 100%;height: 100%;position: fixed;overflow: hidden;top: 0;bottom: 0;left: 0;right: 0;z-index: 0;}
+.playerMain{width: 100%;height: 100%;min-height: 500px;min-width: 930px;transition:all 0.2s;}
+.top{position: absolute;top: 0;width: 100%;height: 56px;background: url("../css/images/T10MNqFzVXXXcu5FDa-20-20.png") repeat 0 0;}
+.middle{position: absolute;top: 56px;bottom: 80px;background-color: #fff;width: 100%;}
+.mainWrap{position: relative;padding:0 310px 0 240px;height: 100%;}
+/*头部*/
+.logo{width: 162px;height: 56px;float: left;margin-left: 16px;display: block;background:url("../css/images/T15QU5FXXmXXcUet2f-162-34.png") no-repeat 0 50%;}
+.search{position: absolute;top: 13px;left: 240px;width: 230px;height: 30px;background: url("../css/images/search.png") no-repeat 0 0;}
+.searchBtn{float: left;width: 18px;height: 28px;padding: 1px 6px;background: url("../css/images/sbtn.png") no-repeat 10 50%;cursor: pointer;}
+.searchTxt{float: left;width: 186px;height: 30px;padding: 3px;vertical-align: middle;background-color: transparent;color: #fff;}
+.mainNav{float: right;width:270px;height: 56px;}
+.tipLogin{width: 148px;height:25px;padding: 16px 15px 15px 33px;text-align: center;font-size: 14px;color: #fff;background: url("../css/images/common.png") -200px -210px;cursor: pointer;float: left;}
+.loginA{padding: 0 5px;color: #f60;text-decoration: none;}
+.myroom{width: 73px;height: 100%;display: block;float:right;background: url("../css/images/common.png") 0 -150px;}
+.leftBar{width: 190px;height: 100%;padding: 0 10px;position: absolute;top:0;left: 0;}
+.menuUL{width: 100%;padding: 10px 0;border-bottom: 1px solid #ccc;}
+.menuLi{width: 100%;height: 36px;}
+.menuLi a{font-size: 12px; display: block;height: 36px;line-height: 36px;padding-left: 36px;border-radius: 4px;position: relative;color: #333;text-decoration: none;}
+.cur a{background-color: #f0f0f0;}
+.icon{position: absolute;top: 9px;left: 9px;width: 18px;height: 18px;}
+.iplay{background-image: url("../css/images/T1oHFEFwGeXXXYdLba-18-18.gif");}
+.ihst{background:url("../css/images/T1bMh.FxNXXXb_r3IF-72-730.png") 0 -376px;}
+.ishouc{background:url("../css/images/T1bMh.FxNXXXb_r3IF-72-730.png") 0 -394px;}
+.collectOut{width: 190px;height: 30px;padding-top: 10px;line-height: 30px;}
+.colS{float: left;color: #aaa;font-size: 12px;font-weight: bold;}
+.colA{float: right;width: 18px;height: 18px;background:url("../css/images/T1bMh.FxNXXXb_r3IF-72-730.png") 0 -412px;margin: 5px 0;}
+.cellectList{width: 185px;height: 89px;margin: 0 2.5px;background-image: url("../css/images/T11aF_Fx4aXXcxTH6l-185-89.png");}
+
+/*播发列表*/
+.mainBody{height: 100%;}
+
+/*专辑信息*/
+.mainOuther{position: absolute;top: 0;right: 0;width: 250px;padding-right: 20px;height: 100%;}
+.albumCover{width: 250px;height: 185px;padding-top: 20px;text-align: center;}
+.albumSale{width: 250px;height: 42px;padding: 5px 0;text-align: center;}
+.asA{display: block;width: 130px;height: 40px;overflow: hidden;padding-left: 40px;border-radius: 4px;border:1px solid #e0e0e0;background:url("../css/images/tao.gif") no-repeat 50% 50%;margin: 0 auto;background-color: #ff7b00;}
+.playHd{width:816px;height: 36px;line-height: 36px;padding-top: 9px;position: absolute;top: 0;border-bottom: 1px solid #ccc;}
+.phInner{height: 100%;padding-left: 72px;padding-right: 110px;overflow: hidden;}
+.col{width: 33%;height: 100%;float: left;padding-right: 0.2%;line-height: 36px;text-align: left;color: #aaa;font-size: 12px;}
+.playBd{width:816px;position: absolute;top: 46px;bottom: 60px;}
+.scrollView{height: 100%;width: 816px;overflow: hidden;position: relative;outline: 0;}
+.songUL{width: 816px;height: 100%;}
+.songList{width: 816px;height: 40px;line-height: 41px;color: #333;border-bottom: 1px solid #ebebeb;position: relative;}
+.check{position: absolute;height: 16px;width: 16px;left: 0;padding: 12px 5px 12px 10px;}
+.checkIn{width: 16px;height: 16px;cursor: pointer;background: url("../css/images/T1bMh.FxNXXXb_r3IF-72-730.png") -1px -710px;-webkit-appearance:none;}
+.start{position: absolute;width: 36px;height: 41px;left: 31px;top: 0;text-align: center;}
+.start em{font-style: normal;font-family: Arial;color: #aaa;font-size: 12px;}
+.songBd{height: 41px;line-height: 41px;padding: 0 110px 0 72px;width: 634px;}
+.songBd .col{color: #333;line-height: 41px;}
+.control{position: absolute;top: 0;right: 0;width: 110px;height: 41px;}
+.cicon{display: block;width: 18px;height: 18px;position: absolute;top:11px;background:url("../css/images/T1bMh.FxNXXXb_r3IF-72-730.png") no-repeat;}
+.love{background-position: -28px -130px;right: 86px;}
+.more{background-position: -28px -473px;right: 53px;}
+.dele{background-position: -28px -491px;right: 20px;}
+.playFt{width: 816px;height: 45px;padding-top: 14px;border-top: 1px solid #ccc;position: absolute;bottom:0;}
+.track{height: 30px;width: 100%;line-height: 30px;position: relative;padding-left: 38px;}
+.uiCheck{position: absolute;left: 0;width: 16px;height: 16px;padding: 7px 10px;}
+.uiItem{float: left;height: 30px;line-height:30px;padding-right: 10px;}
+.itIcon{display: block;color: #333;font-size: 12px;}
+.itDele{width: 73px;height: 30px;background-image:url("../css/images/T1Z8x_FEBXXXcvwvwe-420-106.png");text-indent: 38px;}
+.itShou{width: 73px;height: 30px;background-image:url("../css/images/T1Z8x_FEBXXXcvwvwe-420-106.png");text-indent: 38px;background-position: -150px 0;}
+.itJin{width: 120px;height: 30px;background-image:url("../css/images/T1Z8x_FEBXXXcvwvwe-420-106.png");text-indent: 38px;background-position: -225px 0;}
+.itMore{width: 73px;height: 30px;background-image:url("../css/images/T1Z8x_FEBXXXcvwvwe-420-106.png");text-indent: 38px;background-position: -348px 0;}
+
+/*底部按键*/
+.bottom{position: absolute;left: 0;bottom: 0;width: 100%;height: 80px;background:url("../css/images/T10MNqFzVXXXcu5FDa-20-20.png") repeat;}
+.playerWrap{position: relative;height: 100%;padding-left: 278px;padding-right: 330px;}
+.playerCon{position: absolute;top: 0;left: 0;width: 278px;height: 100%;}
+.pbtn{display: block;width: 30px;height: 30px;position: absolute;background-image: url("../css/images/T1bMh.FxNXXXb_r3IF-72-730.png");}
+.prevBtn{top: 25px;left: 38px;background-position: 0 -90px;}
+.playBtn{top: 25px;left: 91px;}
+.nextBtn{background-position: 0 -60px;top:25px;left: 144px;}
+.mode{display: block;width:20px;height: 18px;position: absolute;top: 31px;left: 202px;background:url("../css/images/T1bMh.FxNXXXb_r3IF-72-730.png") 0 -181px; }

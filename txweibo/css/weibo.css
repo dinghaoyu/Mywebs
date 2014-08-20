@@ -1,12 +1,12 @@
 *{margin: 0;padding: 0;}
-body{background: url("../images/2014_worldCup.jpg") center 0 no-repeat;font:12px/1.75 Tahoma,Arial,sans-serif;background-color: #3d5e0f;}
+body{padding: 0;margin: 0; background: url("../images/2014_worldCup.jpg") center 0 no-repeat;font:12px/1.75 Tahoma,Arial,sans-serif;background-color: #3d5e0f;}
 li{list-style: none;}
 a{text-decoration: none;color: #c9c9c9;}
 a:hover{text-decoration: underline;}
 input{outline: none;border:0;}
 textarea{outline: none;border:0;}
 .clear:after{content: '.';clear: both;display: block;height: 0;visibility: hidden;font-size: 0;line-height: 0;}
-body:after{content: '.';clear: both;display: block;height: 0;visibility: hidden;font-size: 0;line-height: 0;}
+
 /*主体结构*/
 .nav{margin-top: -235px; width: 100%;min-width: 1000px;height: 35px;background-color: rgba(0,0,0,0.8);position: fixed;z-index: 2;}
 .main{border-radius: 0 0 0 5px; width: 960px;min-height: 900px; position: relative;margin: 235px auto 0;z-index: 1;background-color:#e8f4e4;}
@@ -17,6 +17,7 @@ body:after{content: '.';clear: both;display: block;height: 0;visibility: hidden;
 .txLogo{float: left;width: 120px;height: 35px;display: block;background-image: url("../css/images/logo_20131126.png");background-repeat: no-repeat;}
 .navLeft{height: 35px;float: left;padding-left: 15px;}
 .nlList{float: left;line-height: 35px;padding: 0 10px;font-size: 14px;}
+.nlList a:hover{text-decoration: none;}
 .cur{background-color: #000;}
 .cur a{color: #fff;}
 .sou{float: right;width: 162px;height: 23px;border-radius: 3px;background-color: #fff;margin: 5px;overflow: hidden;}
@@ -25,6 +26,7 @@ body:after{content: '.';clear: both;display: block;height: 0;visibility: hidden;
 .souDrop{float: right;width: 11px;height: 11px;margin-top: 6px; display: block;background-image: url("../css/images/b1_20140716.png");background-position: -300px -173px;opacity: 0.6;}
 .navRight{float: right;height: 35px;}
 .nrList{float: left;height: 35px;width: 36px;line-height: 30px;}
+.nrList a:hover{text-decoration: none;}
 .navIcon{width: 20px;height: 20px;display: block;margin: 7px 0 0 8px;}
 .tiIcon{background:url("../css/images/icons_20130704.png") no-repeat;}
 .msgIcon{background:url("../css/images/icons_20130704.png") -20px 0 no-repeat;}
@@ -57,7 +59,7 @@ body:after{content: '.';clear: both;display: block;height: 0;visibility: hidden;
 .qzone{float: right;width: 16px;height: 16px;background-position: -96px -53px;background-image: url("../css/images/b1_20140716.png");margin: 5px 5px 0 0;}
 .sfTxt{float: right;color: #56604a;padding: 3px 10px 0 0;}
 .mainContent{width: 640px;min-height: 500px;margin-top: 10px;}
-.talklistTab{width: 580px;height: 30px;margin: 0 30px;border-bottom: 1px solid #e4e4e4;}
+.talklistTab{width: 580px;height: 30px;padding: 0 30px;border-bottom: 1px solid #e4e4e4;}
 .tbList{float: left;padding: 0 10px;line-height: 30px;}
 .tbList a{color: #666;}
 .tbcur{border-bottom: 3px solid #229bd7;}
@@ -145,3 +147,20 @@ body:after{content: '.';clear: both;display: block;height: 0;visibility: hidden;
 .coInner a{color: #333;}
 .coInner span{color: #333;}
 .coInner p{color: #333;}
+
+/*图片相框*/
+.bigBox{width: 100%;background-color: #F5F5F5;}
+.bbHd{width: 464px;height: 19px;padding: 11px 27px 8px 24px;}
+.btnOrg,.btnMore,.btnSave{color:#006a92;float: right;display: block;line-height: 16px;margin-left: 15px;text-align: center;}
+.ic{vertical-align: top; width: 16px;height: 16px;display:inline-block;margin-right: 3px;background-image: url("../css/images/b1_20140716.png");}
+.iccha{background-position: -153px -145px;}
+.btnBack,.btnPrev{color:#006a92;float: left;display: block;margin-right: 15px;line-height: 16px;}
+.icleft{background-position: -169px -145px;}
+.icright{background-position: -185px -145px;}
+.icmore{background-position: -201px -145px;}
+.icsave{background-position: -217px -145px;}
+.bigImg{display: block;width: 100%;}
+.bm{margin: 0 auto;display: block;cursor: url("http://mat1.gtimg.com/www/mb/images/cursor_minify.cur"),pointer;}
+
+/*左侧浮动条*/
+.talkfixed{position: fixed;top: 35px;width: 580px;background-color: #fff;}
